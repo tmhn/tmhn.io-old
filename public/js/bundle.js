@@ -25234,12 +25234,20 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'main-container', style: mainContainer },
-	        _react2.default.createElement(_sidebar2.default, null),
+	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'container-fluid', style: containerFluid },
-	          this.props.children
+	          { className: 'col-lg-2 col-md-2 col-sm-2 col-xs-1' },
+	          _react2.default.createElement(_sidebar2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-lg-10 col-md-10 col-sm-10 col-xs-10' },
+	          _react2.default.createElement(
+	            'div',
+	            { style: containerFluid },
+	            this.props.children
+	          )
 	        )
 	      );
 	    }
@@ -25250,14 +25258,14 @@
 
 	var mainContainer = {
 	  height: '100%',
-	  minHeight: '100%'
+	  minHeight: '100%',
+	  position: 'absolute'
 	};
 
 	var containerFluid = {
-	  paddingLeft: 0,
-	  paddingRight: 0,
 	  height: '100%',
-	  minHeight: '100%'
+	  minHeight: '100%',
+	  position: 'fixed'
 	};
 
 	exports.default = Main;
@@ -25302,39 +25310,44 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'col-lg-2 col-md-2', style: wrapper },
+	        { className: 'mainMenu' },
 	        _react2.default.createElement(
-	          'div',
+	          'h2',
+	          null,
+	          'Tom Hanson'
+	        ),
+	        _react2.default.createElement(
+	          'h5',
 	          null,
 	          _react2.default.createElement(
-	            'h2',
-	            { style: nav },
-	            'Tom Hanson'
-	          ),
-	          _react2.default.createElement('hr', { style: wrapperHr }),
+	            'a',
+	            { href: 'http://instagram.com/tmhn', style: nav },
+	            '@tmhn'
+	          )
+	        ),
+	        _react2.default.createElement('hr', { style: navbarDivider }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'navSubbar' },
 	          _react2.default.createElement(
-	            'div',
-	            { style: navSubbar },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Home'
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'About'
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Projects'
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Theme'
-	            )
+	            'h4',
+	            null,
+	            'Home'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'About'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Projects'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Theme'
 	          )
 	        )
 	      );
@@ -25344,27 +25357,15 @@
 	  return Sidebar;
 	}(_react2.default.Component);
 
-	var wrapper = {
-	  width: 300,
-	  backgroundColor: '#6AA897',
-	  height: '100%',
-	  fontFamily: 'Montserrat',
-	  textAlign: 'right',
-	  paddingTop: '50'
-	};
-
-	var wrapperHr = {
-	  borderTopWidth: 2,
-	  backgroundColor: '(255, 255, 255, 0.2)'
-	};
-
 	var nav = {
 	  color: '#FFF'
 	};
 
-	var navSubbar = {
-	  color: '#FFF'
-
+	var navbarDivider = {
+	  borderTopWidth: 2,
+	  color: '#FFF',
+	  float: 'right',
+	  width: '90%'
 	};
 
 	exports.default = Sidebar;
@@ -25414,8 +25415,12 @@
 	        { title: 'Home' },
 	        _react2.default.createElement(
 	          'div',
-	          { style: homeSection },
-	          _react2.default.createElement('div', { style: content })
+	          null,
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Tom Hanson'
+	          )
 	        )
 	      );
 	    }
@@ -25423,15 +25428,6 @@
 
 	  return Home;
 	}(_react2.default.Component);
-
-	var homeSection = {
-	  backgroundColor: '#F5F5F5',
-	  height: '100%'
-	};
-
-	var content = {
-	  backgroundColor: '#FFF'
-	};
 
 	exports.default = Home;
 

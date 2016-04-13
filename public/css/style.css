@@ -1,12 +1,46 @@
 body {
   height: 100%;
+  background-color: #F5F5F5;
+  
 }
 
 html {
   width: 100%;
   height: 100%;
+  background-color: #F5F5F5;
 }
 
 #app {
   height:100%;
+}
+
+/*
+- Background Colors:
+  MintGreen: ;
+  MidnightBlue: #2c3e50;
+*/
+
+.mainMenu {
+  background-color: #6AA897;
+  height: 100%;
+  font-family: Montserrat;
+  padding-right: 20px;
+  position: fixed;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.mainMenu > * {
+  text-align: right;
+  color: #FFF;
+}
+
+.navSubbar {
+  padding-top: 30px;
+}
+
+.navSubbar > * {
+  margin-top: 25px;
+  color: #fff;
+  color: rgba( 255, 255, 255, 0.6 );
 }

@@ -7,22 +7,12 @@ class Home extends React.Component {
   render () {
     return (
       <DocumentTitle title='Home'>
-        <div style={homeSection}>
-          <div style={content}>            
-          </div>
+        <div>
+          <h2>Tom Hanson</h2>
         </div>
       </DocumentTitle>
     )
   }
-}
-
-var homeSection = {
-  backgroundColor: '#F5F5F5',
-  height: '100%'
-}
-
-var content = {
-  backgroundColor: '#FFF'
 }
 
 export default Home
