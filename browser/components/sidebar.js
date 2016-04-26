@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
           <h4>Home</h4>
           <h4>About</h4>
           <h4>Projects</h4>
-          <h4>Theme</h4>
+          <h4>Contact</h4>
         </div>
       </div>
     )

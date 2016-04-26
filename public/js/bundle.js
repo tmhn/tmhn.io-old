@@ -25237,12 +25237,12 @@
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-2 col-md-2 col-sm-2 col-xs-1' },
+	          { className: 'col-lg-2 col-md-2 col-sm-2 col-xs-1 sidebar' },
 	          _react2.default.createElement(_sidebar2.default, null)
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-10 col-md-10 col-sm-10 col-xs-10' },
+	          { className: 'col-lg-5 col-md-5 col-sm-5 col-xs-8 content' },
 	          _react2.default.createElement(
 	            'div',
 	            { style: containerFluid },
@@ -25256,16 +25256,9 @@
 	  return Main;
 	}(_react2.default.Component);
 
-	var mainContainer = {
-	  height: '100%',
-	  minHeight: '100%',
-	  position: 'absolute'
-	};
-
 	var containerFluid = {
-	  height: '100%',
-	  minHeight: '100%',
-	  position: 'fixed'
+	  paddingLeft: 200,
+	  paddingRight: 200
 	};
 
 	exports.default = Main;
@@ -25347,7 +25340,7 @@
 	          _react2.default.createElement(
 	            'h4',
 	            null,
-	            'Theme'
+	            'Contact'
 	          )
 	        )
 	      );
@@ -25377,7 +25370,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	          value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25399,34 +25392,89 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Home = function (_React$Component) {
-	  _inherits(Home, _React$Component);
+	          _inherits(Home, _React$Component);
 
-	  function Home() {
-	    _classCallCheck(this, Home);
+	          function Home() {
+	                    _classCallCheck(this, Home);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
-	  }
+	                    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
+	          }
 
-	  _createClass(Home, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        _reactDocumentTitle2.default,
-	        { title: 'Home' },
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Tom Hanson'
-	          )
-	        )
-	      );
-	    }
-	  }]);
+	          _createClass(Home, [{
+	                    key: 'render',
+	                    value: function render() {
+	                              return _react2.default.createElement(
+	                                        _reactDocumentTitle2.default,
+	                                        { title: 'Home' },
+	                                        _react2.default.createElement(
+	                                                  'div',
+	                                                  { className: 'homePage' },
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'h2',
+	                                                            null,
+	                                                            'Tom Hanson'
+	                                                  ),
+	                                                  _react2.default.createElement(
+	                                                            'p',
+	                                                            null,
+	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
+	                                                  )
+	                                        )
+	                              );
+	                    }
+	          }]);
 
-	  return Home;
+	          return Home;
 	}(_react2.default.Component);
 
 	exports.default = Home;

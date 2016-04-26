@@ -7,10 +7,10 @@ class Main extends React.Component {
   render () {
     return (
       <div className='row'>
-        <div className='col-lg-2 col-md-2 col-sm-2 col-xs-1'>
+        <div className='col-lg-2 col-md-2 col-sm-2 col-xs-1 sidebar'>
           <Sidebar />
         </div>
-        <div className='col-lg-10 col-md-10 col-sm-10 col-xs-10'>
+        <div className='col-lg-5 col-md-5 col-sm-5 col-xs-8 content'>
           <div style={containerFluid}>
             {this.props.children}
           </div>
@@ -20,16 +20,9 @@ class Main extends React.Component {
   }
 }
 
-var mainContainer = {
-  height: '100%',
-  minHeight: '100%',
-  position: 'absolute'
-}
-
 var containerFluid = {
-  height: '100%',
-  minHeight: '100%',
-  position: 'fixed'
+  paddingLeft: 200,
+  paddingRight: 200
 }
 
 export default Main
