@@ -25184,12 +25184,27 @@
 
 	var _home2 = _interopRequireDefault(_home);
 
+	var _about = __webpack_require__(232);
+
+	var _about2 = _interopRequireDefault(_about);
+
+	var _projects = __webpack_require__(233);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
+	var _contact = __webpack_require__(234);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Route,
 	  { name: 'home', path: '/', component: _main2.default },
-	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default })
+	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { name: 'about', path: 'about', component: _about2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { name: 'projects', path: 'projects', component: _projects2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { name: 'contact', path: 'contact', component: _contact2.default })
 	);
 
 /***/ },
@@ -25242,7 +25257,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-5 col-md-5 col-sm-5 col-xs-8 content' },
+	          { className: 'col-lg-8 col-md-8 col-sm-8 col-xs-8 content' },
 	          _react2.default.createElement(
 	            'div',
 	            { style: containerFluid },
@@ -25257,8 +25272,7 @@
 	}(_react2.default.Component);
 
 	var containerFluid = {
-	  paddingLeft: 200,
-	  paddingRight: 200
+	  paddingLeft: 200
 	};
 
 	exports.default = Main;
@@ -25279,6 +25293,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(33);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25286,8 +25302,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// import { Link, IndexLink } from 'react-router'
 
 	var Sidebar = function (_React$Component) {
 	  _inherits(Sidebar, _React$Component);
@@ -25325,22 +25339,38 @@
 	          _react2.default.createElement(
 	            'h4',
 	            null,
-	            'Home'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/', style: navLinks },
+	              'Home'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'h4',
 	            null,
-	            'About'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'about', style: navLinks },
+	              'About'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'h4',
 	            null,
-	            'Projects'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'projects', style: navLinks },
+	              'Projects'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'h4',
 	            null,
-	            'Contact'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'contact', style: navLinks },
+	              'Contact'
+	            )
 	          )
 	        )
 	      );
@@ -25352,6 +25382,10 @@
 
 	var nav = {
 	  color: '#FFF'
+	};
+
+	var navLinks = {
+	  color: 'rgba(255, 255, 255, 0.6)'
 	};
 
 	var navbarDivider = {
@@ -25370,7 +25404,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	          value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25392,89 +25426,41 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Home = function (_React$Component) {
-	          _inherits(Home, _React$Component);
+	  _inherits(Home, _React$Component);
 
-	          function Home() {
-	                    _classCallCheck(this, Home);
+	  function Home() {
+	    _classCallCheck(this, Home);
 
-	                    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
-	          }
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
+	  }
 
-	          _createClass(Home, [{
-	                    key: 'render',
-	                    value: function render() {
-	                              return _react2.default.createElement(
-	                                        _reactDocumentTitle2.default,
-	                                        { title: 'Home' },
-	                                        _react2.default.createElement(
-	                                                  'div',
-	                                                  { className: 'homePage' },
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Tom Hanson'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit. Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel. Before they sold out chartreuse microdosing elit magna velit consectetur nesciunt, four loko bushwick letterpress. PBR&B dolore seitan offal messenger bag. Nihil mollit irure venmo. Ut voluptate wolf letterpress, meh sapiente photo booth bitters nisi gentrify helvetica velit. 8-bit gastropub yr, migas narwhal consectetur master cleanse ex polaroid messenger bag cardigan paleo next level celiac. Meh try-hard ad do master cleanse everyday carry.'
-	                                                  )
-	                                        )
-	                              );
-	                    }
-	          }]);
+	  _createClass(Home, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Tom Hanson: Home' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pageContent' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Home'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
+	            _react2.default.createElement('br', null),
+	            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
+	          )
+	        )
+	      );
+	    }
+	  }]);
 
-	          return Home;
+	  return Home;
 	}(_react2.default.Component);
 
 	exports.default = Home;
@@ -25743,6 +25729,189 @@
 	}
 
 	module.exports = shallowEqual;
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(228);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var About = function (_React$Component) {
+	  _inherits(About, _React$Component);
+
+	  function About() {
+	    _classCallCheck(this, About);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(About).apply(this, arguments));
+	  }
+
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Tom Hanson: About' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pageContent' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'About'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return About;
+	}(_react2.default.Component);
+
+	exports.default = About;
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(228);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Projects = function (_React$Component) {
+	  _inherits(Projects, _React$Component);
+
+	  function Projects() {
+	    _classCallCheck(this, Projects);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).apply(this, arguments));
+	  }
+
+	  _createClass(Projects, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Tom Hanson: Projects' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pageContent' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Projects'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Projects;
+	}(_react2.default.Component);
+
+	exports.default = Projects;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(228);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Contact = function (_React$Component) {
+	  _inherits(Contact, _React$Component);
+
+	  function Contact() {
+	    _classCallCheck(this, Contact);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Contact).apply(this, arguments));
+	  }
+
+	  _createClass(Contact, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Tom Hanson: Contact' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pageContent' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Contact'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Contact;
+	}(_react2.default.Component);
+
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);

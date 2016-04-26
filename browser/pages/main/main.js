@@ -10,7 +10,7 @@ class Main extends React.Component {
         <div className='col-lg-2 col-md-2 col-sm-2 col-xs-1 sidebar'>
           <Sidebar />
         </div>
-        <div className='col-lg-5 col-md-5 col-sm-5 col-xs-8 content'>
+        <div className='col-lg-8 col-md-8 col-sm-8 col-xs-8 content'>
           <div style={containerFluid}>
             {this.props.children}
           </div>
@@ -21,8 +21,7 @@ class Main extends React.Component {
 }
 
 var containerFluid = {
-  paddingLeft: 200,
-  paddingRight: 200
+  paddingLeft: 200
 }
 
 export default Main

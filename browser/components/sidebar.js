@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-// import { Link, IndexLink } from 'react-router'
+import { Link, IndexLink } from 'react-router'
 
 class Sidebar extends React.Component {
   render () {
@@ -11,10 +11,10 @@ class Sidebar extends React.Component {
         <h5><a href='http://instagram.com/tmhn' style={nav}>@tmhn</a></h5>
         <hr style={navbarDivider}/>
         <div className='navSubbar'>
-          <h4>Home</h4>
-          <h4>About</h4>
-          <h4>Projects</h4>
-          <h4>Contact</h4>
+          <h4><Link to='/' style={navLinks}>Home</Link></h4>
+          <h4><Link to='about' style={navLinks}>About</Link></h4>
+          <h4><Link to='projects' style={navLinks}>Projects</Link></h4>
+          <h4><Link to='contact' style={navLinks}>Contact</Link></h4>
         </div>
       </div>
     )
@@ -23,6 +23,10 @@ class Sidebar extends React.Component {
 
 var nav = {
   color: '#FFF'
+}
+
+var navLinks = {
+  color: 'rgba(255, 255, 255, 0.6)'
 }
 
 var navbarDivider = {
