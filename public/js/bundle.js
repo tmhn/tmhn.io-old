@@ -25227,6 +25227,10 @@
 
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 
+	var _navbar = __webpack_require__(235);
+
+	var _navbar2 = _interopRequireDefault(_navbar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25257,10 +25261,11 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-lg-8 col-md-8 col-sm-8 col-xs-8 content' },
+	          { className: 'col-lg-8 col-md-8 col-sm-8 col-xs-6 content' },
 	          _react2.default.createElement(
 	            'div',
-	            { style: containerFluid },
+	            { className: 'containerFluid' },
+	            _react2.default.createElement(_navbar2.default, { className: 'mobileNavbar' }),
 	            this.props.children
 	          )
 	        )
@@ -25270,10 +25275,6 @@
 
 	  return Main;
 	}(_react2.default.Component);
-
-	var containerFluid = {
-	  paddingLeft: 200
-	};
 
 	exports.default = Main;
 
@@ -25439,14 +25440,14 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
-	        { title: 'Tom Hanson: Home' },
+	        { title: 'Tom Hanson - Home' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'pageContent' },
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'Home'
+	            'Hi, I\'m Tom'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -25772,7 +25773,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
-	        { title: 'Tom Hanson: About' },
+	        { title: 'Tom Hanson - About' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'pageContent' },
@@ -25833,7 +25834,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
-	        { title: 'Tom Hanson: Projects' },
+	        { title: 'Tom Hanson - Projects' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'pageContent' },
@@ -25912,6 +25913,84 @@
 	}(_react2.default.Component);
 
 	exports.default = Contact;
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Navbar = function (_React$Component) {
+	  _inherits(Navbar, _React$Component);
+
+	  function Navbar() {
+	    _classCallCheck(this, Navbar);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Navbar).apply(this, arguments));
+	  }
+
+	  _createClass(Navbar, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'nav',
+	        { className: 'navbar navbar-default navbar-fixed-top mobileNavbar', role: 'navigation', style: navbar },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container container-fluid' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'navbar-header col-lg-2 col-md-1 col-sm-1', style: navbarHomeLink },
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'navbar-brand', href: '/', style: navbarBrand },
+	              'Tom Hanson'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Navbar;
+	}(_react2.default.Component);
+
+	var navbar = {
+	  minHeight: 80,
+	  backgroundColor: '#6AA897',
+	  border: 0
+	};
+
+	var navbarHomeLink = {
+	  marginTop: 15
+	};
+
+	var navbarBrand = {
+	  fontSize: 25,
+	  fontFamily: 'Avenir',
+	  color: '#fff',
+	  display: 'block'
+	};
+
+	exports.default = Navbar;
 
 /***/ }
 /******/ ]);

@@ -20,6 +20,10 @@ html {
   MidnightBlue: #2c3e50;
 */
 
+.containerFluid {
+  padding-left: 200px;
+}
+
 .mainMenu {
   background-color: #6AA897;
   height: 100%;
@@ -65,3 +69,27 @@ html {
   color: #7B7B82;
 }
 
+/* -- Media Queries --*/
+
+@media (max-width: 5000px) {
+  .mobileNavbar { display: none; }
+}
+
+@media (max-width: 1120px) {
+  .containerFluid { padding-left: 90px }
+  .content { width: 80%; }
+  .mainMenu { width: 200px; }
+  .mobileNavbar { display: none; }
+}
+
+@media (max-width: 930px) {
+  .mainMenu { active: false; }
+  .mobileNavbar { display: none; }
+}
+
+@media (max-width: 767px) {
+  .containerFluid { padding-left: 0 }
+  .content { width: 100% }
+  .mainMenu { display: none }
+  .mobileNavbar { display: block; }
+}
