@@ -3,6 +3,7 @@
 import React from 'react'
 import Sidebar from '../../components/sidebar'
 import Navbar from '../../components/navbar'
+import Menu from '../../components/menu'
 
 class Main extends React.Component {
 
@@ -14,7 +15,7 @@ class Main extends React.Component {
         </div>
         <div className='col-lg-8 col-md-8 col-sm-8 col-xs-6 content'>
           <div className='containerFluid'>
-            <Navbar className='mobileNavbar'/>
+            <Menu className='mobileNavbar'/>
             {this.props.children}
           </div>
         </div>
