@@ -25227,10 +25227,6 @@
 
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 
-	var _navbar = __webpack_require__(235);
-
-	var _navbar2 = _interopRequireDefault(_navbar);
-
 	var _menu = __webpack_require__(236);
 
 	var _menu2 = _interopRequireDefault(_menu);
@@ -25346,7 +25342,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/', style: navLinks },
+	              { to: '/' },
 	              'Home'
 	            )
 	          ),
@@ -25355,7 +25351,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: 'about', style: navLinks },
+	              { to: 'about' },
 	              'About'
 	            )
 	          ),
@@ -25364,7 +25360,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: 'projects', style: navLinks },
+	              { to: 'projects' },
 	              'Projects'
 	            )
 	          ),
@@ -25373,7 +25369,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: 'contact', style: navLinks },
+	              { to: 'contact' },
 	              'Contact'
 	            )
 	          )
@@ -25387,10 +25383,6 @@
 
 	var nav = {
 	  color: '#FFF'
-	};
-
-	var navLinks = {
-	  color: 'rgba(255, 255, 255, 0.6)'
 	};
 
 	var navbarDivider = {
@@ -25409,7 +25401,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	          value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25431,101 +25423,70 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Home = function (_React$Component) {
-	          _inherits(Home, _React$Component);
+	  _inherits(Home, _React$Component);
 
-	          function Home() {
-	                    _classCallCheck(this, Home);
+	  function Home() {
+	    _classCallCheck(this, Home);
 
-	                    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
-	          }
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
+	  }
 
-	          _createClass(Home, [{
-	                    key: 'render',
-	                    value: function render() {
-	                              return _react2.default.createElement(
-	                                        _reactDocumentTitle2.default,
-	                                        { title: 'Tom Hanson - Home' },
-	                                        _react2.default.createElement(
-	                                                  'div',
-	                                                  { className: 'pageContent' },
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'h2',
-	                                                            null,
-	                                                            'Hi, I\'m Tom'
-	                                                  ),
-	                                                  _react2.default.createElement(
-	                                                            'p',
-	                                                            null,
-	                                                            'YOLO paleo PBR&B, craft beer leggings nihil esse affogato. Placeat banjo distillery, raw denim hella sed cray cliche +1 chillwave. Four dollar toast helvetica in, taxidermy polaroid lo-fi aliqua. Authentic try-hard pinterest echo park pop-up occaecat kogi, cupidatat ut cornhole. Deserunt duis fugiat actually, williamsburg beard affogato nesciunt. Microdosing voluptate venmo vinyl portland helvetica. Roof party stumptown kitsch iPhone man bun elit.',
-	                                                            _react2.default.createElement('br', null),
-	                                                            'Kale chips ugh nostrud sunt, knausgaard kickstarter fashion axe chartreuse pork belly sartorial paleo. Est id aliquip forage 90\'s authentic hashtag portland farm-to-table et. Ea ad veniam cold-pressed everyday carry. Kombucha voluptate butcher delectus dolor, odio asymmetrical occupy disrupt. Viral ethical exercitation, sed meggings consequat microdosing. Wayfarers excepteur cray, lumbersexual tousled ennui seitan. Schlitz raw denim fashion axe, DIY asymmetrical aesthetic blog art party hoodie you probably haven\'t heard of them yuccie culpa tattooed stumptown. Aesthetic lumbersexual ethical yuccie in do. Cray tumblr exercitation hashtag mollit. Thundercats occaecat selfies swag. Ethical occaecat paleo meggings next level. Kitsch yr venmo cronut, kogi disrupt man bun biodiesel occaecat tofu. Normcore kickstarter mollit, elit nesciunt ex lo-fi bushwick sustainable aliquip tofu disrupt kinfolk. Sartorial chillwave kitsch 3 wolf moon deep v, swag fashion axe four dollar toast commodo tilde messenger bag biodiesel.'
-	                                                  )
-	                                        )
-	                              );
-	                    }
-	          }]);
+	  _createClass(Home, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Tom Hanson - Home' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pageContent' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Hi, I\'m Tom'
+	          ),
+	          _react2.default.createElement('hr', null),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'I\'m a Computer Science Undergraduate at ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://shu.ac.uk' },
+	              'SHU'
+	            ),
+	            ' due to be graduating Summer 2016! I love crafting elegant digital solutions especially from open source software, with my current favourites being ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://facebook.github.io/react/' },
+	              'React.js'
+	            ),
+	            ' and ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://facebook.github.io/react-native/' },
+	              'ReactNative'
+	            ),
+	            ' alongside ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://nodejs.org/' },
+	              'Node.js'
+	            ),
+	            '. These projects are usually fuelled by flat-whites and bagels.'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'When not developing new software solutions I am usually training for my next triathlon, however I am partial to the occasional pastry and strawberry milkshake.'
+	          )
+	        )
+	      );
+	    }
+	  }]);
 
-	          return Home;
+	  return Home;
 	}(_react2.default.Component);
 
 	exports.default = Home;
@@ -25815,6 +25776,10 @@
 
 	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
 
+	var _pageHeader = __webpack_require__(502);
+
+	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25840,11 +25805,16 @@
 	        { title: 'Tom Hanson - About' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'pageContent' },
+	          null,
+	          _react2.default.createElement(_pageHeader2.default, { text: 'About' }),
 	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'About'
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Tom Hanson'
+	            )
 	          )
 	        )
 	      );
@@ -25876,6 +25846,10 @@
 
 	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
 
+	var _pageHeader = __webpack_require__(502);
+
+	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25901,11 +25875,22 @@
 	        { title: 'Tom Hanson - Projects' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'pageContent' },
+	          null,
+	          _react2.default.createElement(_pageHeader2.default, { text: 'Projects' }),
 	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Projects'
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Doppio and DoppioHealth'
+	            ),
+	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
+	            )
 	          )
 	        )
 	      );
@@ -25937,6 +25922,10 @@
 
 	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
 
+	var _pageHeader = __webpack_require__(502);
+
+	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25959,14 +25948,19 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
-	        { title: 'Tom Hanson: Contact' },
+	        { title: 'Tom Hanson - Contact' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'pageContent' },
+	          null,
+	          _react2.default.createElement(_pageHeader2.default, { text: 'Contact' }),
 	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Contact'
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Form'
+	            )
 	          )
 	        )
 	      );
@@ -25979,147 +25973,7 @@
 	exports.default = Contact;
 
 /***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* Deprecated for Menu.js*/
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Navbar = function (_React$Component) {
-	  _inherits(Navbar, _React$Component);
-
-	  function Navbar(props) {
-	    _classCallCheck(this, Navbar);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Navbar).call(this, props));
-
-	    _this.state = {
-	      menuToggle: false
-	    };
-	    return _this;
-	  }
-
-	  _createClass(Navbar, [{
-	    key: 'handleMenu',
-	    value: function handleMenu(e) {
-	      if (this.state.menuToggle == true) {
-	        this.setState({
-	          menuToggle: false
-	        });
-	      } else {
-	        this.setState({
-	          menuToggle: true
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      if (this.state.toggleMenu) {
-	        var menuToggle = _react2.default.createElement(
-	          'div',
-	          { style: menuToggle },
-	          'TomHanson'
-	        );
-	      }
-
-	      return _react2.default.createElement(
-	        'nav',
-	        { className: 'navbar navbar-default navbar-fixed-top mobileNavbar', role: 'navigation', style: navbar },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container container-fluid', style: mobileMenu },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-lg-2 col-md-1 col-sm-1', style: navbarHomeLink },
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'navbar-brand', href: '/', style: navbarBrand },
-	              'Tom Hanson'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col-lg-10 col-md-11 col-sm-11' },
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'nav navbar-nav navbar-right', style: navbarRight },
-	              _react2.default.createElement('input', { type: 'button', onClick: this.handleMenu.bind(this), value: 'Menu', style: menuButton })
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Navbar;
-	}(_react2.default.Component);
-
-	var navbarRight = {
-	  float: 'right',
-	  paddingLeft: 10,
-	  paddingRight: 19,
-	  paddingTop: 3,
-	  fontFamily: 'Avenir',
-	  fontSize: 18,
-	  color: '#fff'
-	};
-
-	var mobileMenu = {
-	  display: 'block',
-	  height: 60
-	};
-
-	var menuButton = {
-	  backgroundColor: '#6AA897',
-	  border: 'none'
-	};
-
-	var menuToggle = {
-	  height: 100,
-	  width: 100,
-	  backgroundColor: 'red'
-	};
-
-	var navbar = {
-	  minHeight: 80,
-	  backgroundColor: '#6AA897',
-	  border: 0
-	};
-
-	var navbarHomeLink = {
-	  marginTop: 15
-	};
-
-	var navbarBrand = {
-	  fontSize: 25,
-	  fontFamily: 'Avenir',
-	  color: '#fff',
-	  display: 'block'
-	};
-
-	exports.default = Navbar;
-
-/***/ },
+/* 235 */,
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26251,7 +26105,7 @@
 	};
 
 	var navbarHeader = {
-	  paddingTop: 10,
+	  paddingTop: 13,
 	  paddingLeft: 30
 	};
 
@@ -45412,6 +45266,63 @@
 	var _ValidComponentChildren3 = _interopRequireDefault(_ValidComponentChildren2);
 
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
+
+/***/ },
+/* 502 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PageHeader = function (_React$Component) {
+	  _inherits(PageHeader, _React$Component);
+
+	  function PageHeader() {
+	    _classCallCheck(this, PageHeader);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(PageHeader).apply(this, arguments));
+	  }
+
+	  _createClass(PageHeader, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'pageHeaderContent' },
+	        _react2.default.createElement(
+	          'h2',
+	          { style: header },
+	          this.props.text
+	        )
+	      );
+	    }
+	  }]);
+
+	  return PageHeader;
+	}(_react2.default.Component);
+
+	var header = {
+	  color: '#6AA897'
+	};
+
+	exports.default = PageHeader;
 
 /***/ }
 /******/ ]);

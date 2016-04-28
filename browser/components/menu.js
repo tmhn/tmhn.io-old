@@ -63,7 +63,7 @@ var navbarLinks = {
 }
 
 var navbarHeader = {
-  paddingTop: 10,
+  paddingTop: 13,
   paddingLeft: 30
 }
 

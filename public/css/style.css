@@ -50,13 +50,42 @@ html {
   color: rgba( 255, 255, 255, 0.6 );
 }
 
+.navSubbar a{
+  text-decoration: none;
+  color: rgba( 255, 255, 255, 0.6 );
+}
+
+.navSubbar a:hover {
+  color: #fff;
+}
+
 /* -- Mobile menu toggle button --*/
 .navbar-toggle {
+  background-color: #6AA897;
+  border: 2px solid #6AA897;
+}
+
+.navbar-default .navbar-toggle {
+ border: 2px solid #6AA897; 
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.navbar-default .navbar-toggle:focus{
+  background-color: #6AA897;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
 .navbar-collapse {
   padding-left: 53px;
+  border-top: none;
+  -webkit-box-shadow: none;
 }
 
 .content {
@@ -76,6 +105,15 @@ html {
   font-size: 16px;
   line-height: 35px;
   color: #7B7B82;
+}
+
+/* PageHeader Banner */
+
+.pageHeaderContent {
+  background-color: #fff;
+  font-family: Avenir;
+  padding: 50px;
+  margin-bottom: 25px;
 }
 
 /* -- Media Queries --*/
