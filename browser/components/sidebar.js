@@ -7,7 +7,7 @@ class Sidebar extends React.Component {
   render () {
     return (
       <div className='mainMenu'>
-        <h2>Tom Hanson</h2>
+        <h2><Link to='/' style={nav}>Tom Hanson</Link></h2>
         <h5><a href='http://instagram.com/tmhn' style={nav}>@tmhn</a></h5>
         <hr style={navbarDivider}/>
         <div className='navSubbar'>
@@ -22,7 +22,8 @@ class Sidebar extends React.Component {
 }
 
 var nav = {
-  color: '#FFF'
+  color: '#FFF',
+  textDecoration: 'none'
 }
 
 var navbarDivider = {

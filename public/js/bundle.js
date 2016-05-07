@@ -25322,7 +25322,11 @@
 	        _react2.default.createElement(
 	          'h2',
 	          null,
-	          'Tom Hanson'
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/', style: nav },
+	            'Tom Hanson'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'h5',
@@ -25382,7 +25386,8 @@
 	}(_react2.default.Component);
 
 	var nav = {
-	  color: '#FFF'
+	  color: '#FFF',
+	  textDecoration: 'none'
 	};
 
 	var navbarDivider = {
