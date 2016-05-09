@@ -51,7 +51,7 @@ var navbarBrand = {
 
 var navbarMenu = {
   minHeight: 80,
-  backgroundColor: '#6AA897',
+  backgroundColor: '#24CC82',
   border: 0
 }
 

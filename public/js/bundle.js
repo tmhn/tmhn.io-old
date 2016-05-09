@@ -25196,6 +25196,10 @@
 
 	var _contact2 = _interopRequireDefault(_contact);
 
+	var _doppio = __webpack_require__(502);
+
+	var _doppio2 = _interopRequireDefault(_doppio);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createElement(
@@ -25203,9 +25207,12 @@
 	  { name: 'home', path: '/', component: _main2.default },
 	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { name: 'about', path: 'about', component: _about2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { name: 'contact', path: 'contact', component: _contact2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { name: 'projects', path: 'projects', component: _projects2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { name: 'contact', path: 'contact', component: _contact2.default })
+	  _react2.default.createElement(_reactRouter.Route, { name: 'projects/doppio', path: 'projects/doppio', component: _doppio2.default })
 	);
+
+	// - Projects
 
 /***/ },
 /* 225 */
@@ -25519,7 +25526,7 @@
 
 	var navbarMenu = {
 	  minHeight: 80,
-	  backgroundColor: '#6AA897',
+	  backgroundColor: '#24CC82',
 	  border: 0
 	};
 
@@ -45105,7 +45112,7 @@
 	        { className: 'pageHeaderContent' },
 	        _react2.default.createElement(
 	          'h2',
-	          { style: header },
+	          null,
 	          this.props.text
 	        )
 	      );
@@ -45114,10 +45121,6 @@
 
 	  return PageHeader;
 	}(_react2.default.Component);
-
-	var header = {
-	  color: '#6AA897'
-	};
 
 	exports.default = PageHeader;
 
@@ -45231,7 +45234,7 @@
 	              'If you\'d like to know a little more, then please feel free to download my ',
 	              _react2.default.createElement(
 	                'a',
-	                { href: '', download: '', className: 'btn btn-default' },
+	                { href: '', download: '', className: 'btn btn-default button' },
 	                'CV'
 	              )
 	            )
@@ -45269,6 +45272,8 @@
 	var _pageHeader = __webpack_require__(498);
 
 	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
+	var _reactRouter = __webpack_require__(33);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45310,21 +45315,11 @@
 	              'p',
 	              null,
 	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'pageContent' },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              'Lines iOS App'
 	            ),
-	            _react2.default.createElement('hr', null),
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
+	              _reactRouter.Link,
+	              { to: '/projects/doppio', className: 'btn btn-default button' },
+	              'Read More'
 	            )
 	          )
 	        )
@@ -45466,6 +45461,82 @@
 	};
 
 	exports.default = Contact;
+
+/***/ },
+/* 502 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(494);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	var _pageHeader = __webpack_require__(498);
+
+	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Doppio = function (_React$Component) {
+	  _inherits(Doppio, _React$Component);
+
+	  function Doppio() {
+	    _classCallCheck(this, Doppio);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Doppio).apply(this, arguments));
+	  }
+
+	  _createClass(Doppio, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { title: 'Doppio - Tom Hanson' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(_pageHeader2.default, { text: 'Doppio' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Doppio and DoppioHealth'
+	            ),
+	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Doppio;
+	}(_react2.default.Component);
+
+	exports.default = Doppio;
 
 /***/ }
 /******/ ]);

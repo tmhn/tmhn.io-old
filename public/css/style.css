@@ -17,6 +17,7 @@ html {
 /*
 - Background Colors:
   MintGreen: #6AA897;
+  FlatGreen: #24CC82;
   MidnightBlue: #2c3e50;
 */
 
@@ -25,7 +26,7 @@ html {
 }
 
 .mainMenu {
-  background-color: #6AA897;
+  background-color: #24CC82;
   height: 100%;
   width: 300px;
   font-family: Avenir;
@@ -59,14 +60,34 @@ html {
   color: #fff;
 }
 
+.button {
+  background-color: #24CC82;
+  border: 1px solid #24CC82;
+}
+
+.button {
+   text-decoration: none;
+   color: #FFF; 
+}
+
+.button:hover {
+  background-color: #FFF;
+  color: #24CC82;
+  border: 1px solid #24CC82;
+}
+
+.button:hover {
+  color: #24CC82;
+}
+
 /* -- Mobile menu toggle button --*/
 .navbar-toggle {
-  background-color: #6AA897;
-  border: 2px solid #6AA897;
+  background-color: #24CC82;
+  border: 2px solid #24CC82;
 }
 
 .navbar-default .navbar-toggle {
- border: 2px solid #6AA897; 
+ border: 2px solid #24CC82; 
 }
 
 .navbar-default .navbar-toggle:hover {
@@ -75,7 +96,7 @@ html {
 }
 
 .navbar-default .navbar-toggle:focus{
-  background-color: #6AA897;
+  background-color: #24CC82;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -118,6 +139,10 @@ html {
   padding-bottom: 50px;
   margin-bottom: 25px;
   margin-top: 40px;
+}
+
+.pageHeaderContent > h2 {
+  color: #24CC82;
 }
 
 /* -- Media Queries --*/

@@ -18,7 +18,7 @@ class About extends React.Component {
             <br />
             <p>I love learning new things and scratching my own itch, recently this has included using <a href='https://nodejs.org/'>Node.js</a> and <a href='https://facebook.github.io/react/'>React.js</a> to create JavaScript web applications, alongside developing iOS/Android apps with <a href='https://facebook.github.io/react-native/'>ReactNative</a>. I am currently furthering my knowledge of these frameworks by producing a number of side projects, these can be found <Link to='projects'>here</Link>.</p>
             <br />
-            <p>If you'd like to know a little more, then please feel free to download my <a href='' download='' className='btn btn-default'>CV</a></p>
+            <p>If you'd like to know a little more, then please feel free to download my <a href='' download='' className='btn btn-default button'>CV</a></p>
           </div>
         </div>
       </DocumentTitle>

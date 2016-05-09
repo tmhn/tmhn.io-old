@@ -3,14 +3,13 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import PageHeader from '../../components/page-header'
-import { Link } from 'react-router'
 
-class Projects extends React.Component {
+class Doppio extends React.Component {
   render () {
     return (
-      <DocumentTitle title='Projects - Tom Hanson'>
+      <DocumentTitle title='Doppio - Tom Hanson'>
         <div>
-          <PageHeader text='Projects'/>
+          <PageHeader text='Doppio' />
           <div className='pageContent'>
             <h4>Doppio and DoppioHealth</h4>
             <hr />
@@ -20,7 +19,6 @@ class Projects extends React.Component {
             disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, 
             you probably haven't heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually 
             fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore</p>
-            <Link to='/projects/doppio' className='btn btn-default button'>Read More</Link>
           </div>
         </div>
       </DocumentTitle>
@@ -28,4 +26,4 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects
+export default Doppio

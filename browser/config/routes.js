@@ -9,11 +9,15 @@ import About from '../pages/about/about'
 import Projects from '../pages/projects/projects'
 import Contact from '../pages/contact/contact'
 
+// - Projects
+import DoppioProject from '../pages/projects/doppio'
+
 export default (
   <Route name='home' path='/' component={Main}>
     <IndexRoute component={Home} />
     <Route name='about' path='about' component={About} />
-    <Route name='projects' path='projects' component={Projects} />
     <Route name='contact' path='contact' component={Contact} />
+    <Route name='projects' path='projects' component={Projects} />
+    <Route name='projects/doppio' path='projects/doppio' component={DoppioProject} />
   </Route>
 )
