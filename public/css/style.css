@@ -61,23 +61,18 @@ html {
 }
 
 .button {
-  background-color: #24CC82;
-  border: 1px solid #24CC82;
-}
-
-.button {
-   text-decoration: none;
-   color: #FFF; 
-}
-
-.button:hover {
   background-color: #FFF;
   color: #24CC82;
-  border: 1px solid #24CC82;
+  border: 1.5px solid #24CC82;
+  color: #24CC82;
+  font-size: 16px; 
 }
 
 .button:hover {
-  color: #24CC82;
+  background-color: #24CC82;
+  border: 1.5px solid #24CC82;
+  text-decoration: none;
+  color: #FFF;
 }
 
 /* -- Mobile menu toggle button --*/
@@ -123,9 +118,10 @@ html {
 }
 
 .pageContent > p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 35px;
   color: #7B7B82;
+  font-weight: 100;
 }
 
 /* PageHeader Banner */
