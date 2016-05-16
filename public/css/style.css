@@ -166,6 +166,11 @@ html {
   color: #24CC82;
 }
 
+.contactIcon {
+  height: 75px;
+  width: 75px;
+}
+
 /* -- Media Queries --*/
 
 @media (max-width: 5000px) {
@@ -184,16 +189,47 @@ html {
   .mobileNavbar { display: none; }
 }
 
+/* Mobile */
 @media (max-width: 767px) {
   .containerFluid { padding-left: 0 }
   .content { width: 96%; }
   .mainMenu { display: none }
   .mobileNavbar { display: block; }
+  
   .pageHeaderContent {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 35px;
   }
+
+  .pageHeaderContent h2 {
+    font-size: 25px;
+  }
+  
+  .pageContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .pageContent h4 {
+    font-size: 15px;
+  }
+
   .pageContent p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .contactIcon {
+    height: 40px;
+    width: 40px;
   }
 }

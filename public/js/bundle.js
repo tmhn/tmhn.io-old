@@ -25200,8 +25200,13 @@
 
 	var _doppio2 = _interopRequireDefault(_doppio);
 
+	var _webApps = __webpack_require__(503);
+
+	var _webApps2 = _interopRequireDefault(_webApps);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// - Projects
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Route,
 	  { name: 'home', path: '/', component: _main2.default },
@@ -25209,10 +25214,9 @@
 	  _react2.default.createElement(_reactRouter.Route, { name: 'about', path: 'about', component: _about2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { name: 'contact', path: 'contact', component: _contact2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { name: 'projects', path: 'projects', component: _projects2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { name: 'projects/doppio', path: 'projects/doppio', component: _doppio2.default })
+	  _react2.default.createElement(_reactRouter.Route, { name: 'projects/doppio', path: 'projects/doppio', component: _doppio2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { name: 'projects/web-apps', path: 'projects/web-apps', component: _webApps2.default })
 	);
-
-	// - Projects
 
 /***/ },
 /* 225 */
@@ -25513,7 +25517,7 @@
 	};
 
 	var navbarMenu = {
-	  minHeight: 80,
+	  minHeight: 60,
 	  backgroundColor: '#24CC82',
 	  border: 0
 	};
@@ -45309,6 +45313,26 @@
 	              { to: '/projects/doppio', className: 'btn btn-default button' },
 	              'Read More'
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Apollo - National Admission Agency'
+	            ),
+	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'DoppioHealth is a framework that allows healthcare professionals to create personalised mobile applications for patients to monitor their daily activities. Comprising of a Node.js web application with a React.js front-end, MongoDB data store and then a React Native iOS component, this project was submitted as my dissertation project.'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/projects/web-apps', className: 'btn btn-default button' },
+	              'Read More'
+	            )
 	          )
 	        )
 	      );
@@ -45386,7 +45410,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row', style: elementRow },
-	                _react2.default.createElement('img', { style: icon, src: 'images/icons/ios7-email-outline.png' }),
+	                _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/ios7-email-outline.png' }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'mailto:itomhanson@gmail.com', style: linkText },
@@ -45396,7 +45420,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row', style: elementRow },
-	                _react2.default.createElement('img', { style: icon, src: 'images/icons/social-github-outline.png' }),
+	                _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-github-outline.png' }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://github.com/tmhn', style: linkText },
@@ -45406,7 +45430,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row', style: elementRow },
-	                _react2.default.createElement('img', { style: icon, src: 'images/icons/social-linkedin-outline.png' }),
+	                _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-linkedin-outline.png' }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'https://uk.linkedin.com/in/thomasmhanson', style: linkText },
@@ -45416,7 +45440,7 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row', style: elementRow },
-	                _react2.default.createElement('img', { style: icon, src: 'images/icons/social-twitter-outline.png' }),
+	                _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-twitter-outline.png' }),
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://twitter.com/iTomHanson', style: linkText },
@@ -45536,6 +45560,86 @@
 	}(_react2.default.Component);
 
 	exports.default = Doppio;
+
+/***/ },
+/* 503 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDocumentTitle = __webpack_require__(494);
+
+	var _reactDocumentTitle2 = _interopRequireDefault(_reactDocumentTitle);
+
+	var _pageHeader = __webpack_require__(498);
+
+	var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
+	var _reactRouter = __webpack_require__(33);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var WebApps = function (_React$Component) {
+	  _inherits(WebApps, _React$Component);
+
+	  function WebApps() {
+	    _classCallCheck(this, WebApps);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WebApps).apply(this, arguments));
+	  }
+
+	  _createClass(WebApps, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactDocumentTitle2.default,
+	        { text: 'Apollo - Tom Hanson' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(_pageHeader2.default, { text: 'Apollo' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'pageContent' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Apollo'
+	            ),
+	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement('p', null),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/projects', className: 'btn btn-default button' },
+	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-menu-left buttonGlyph' }),
+	              'Back to Projects'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return WebApps;
+	}(_react2.default.Component);
+
+	exports.default = WebApps;
 
 /***/ }
 /******/ ]);
