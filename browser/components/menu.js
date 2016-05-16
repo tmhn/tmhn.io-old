@@ -63,8 +63,8 @@ var navbarLinks = {
 }
 
 var navbarHeader = {
-  paddingTop: 13,
-  paddingLeft: 30
+  paddingTop: 8,
+  paddingLeft: 5
 }
 
 export default Menu
