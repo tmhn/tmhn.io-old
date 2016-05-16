@@ -193,4 +193,7 @@ html {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+  .pageContent p {
+    font-size: 16px;
+  }
 }
