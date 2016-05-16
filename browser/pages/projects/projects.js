@@ -12,14 +12,11 @@ class Projects extends React.Component {
         <div>
           <PageHeader text='Projects'/>
           <div className='pageContent'>
-            <h4>Doppio and DoppioHealth</h4>
+            <h4>DoppioHealth</h4>
             <hr />
-            <p>Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, 
-            flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. 
-            Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, 
-            disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, 
-            you probably haven't heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually 
-            fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore</p>
+            <p>DoppioHealth is a framework that allows healthcare professionals to create personalised mobile applications
+            for patients to monitor their daily activities. Comprising of a Node.js web application with a React.js front-end, 
+              MongoDB data store and then a React Native iOS component, this project was submitted as my dissertation project.</p>
             <Link to='/projects/doppio' className='btn btn-default button'>Read More</Link>
           </div>
         </div>

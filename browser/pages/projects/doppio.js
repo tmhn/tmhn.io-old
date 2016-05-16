@@ -3,22 +3,29 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import PageHeader from '../../components/page-header'
+import { Link } from 'react-router'
 
 class Doppio extends React.Component {
   render () {
     return (
-      <DocumentTitle title='Doppio - Tom Hanson'>
+      <DocumentTitle title='DoppioHealth - Tom Hanson'>
         <div>
-          <PageHeader text='Doppio' />
+          <PageHeader text='DoppioHealth' />
           <div className='pageContent'>
-            <h4>Doppio and DoppioHealth</h4>
+            <h4>DoppioHealth</h4>
             <hr />
-            <p>Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, 
-            flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. 
-            Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, 
-            disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, 
-            you probably haven't heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually 
-            fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore</p>
+            <p>
+              DoppioHealth is a system that was developed as part of my undergraduate Computer Science degree for my dissertation. 
+              The purpose of the system was to allow healthcare professionals to create personalised mobile applications for patients.
+              Rather than downloading generic solutions that cater for many situations, the DoppioHealth iOS application will be customised
+              for the patient with no excess functionality. The DoppioHealth system comprises of a React.js web application and a React Native
+              iOS application that collaborate together.<br /><br />
+
+              DoppioHealth originally implemented a Google Blockly visual programming user-interface, however after a Feasibility test
+              conducted using the technologies, the decision was taken to move towards a solution that would ease data entry on behalf of the
+              healthcare professional.
+            </p>
+            <Link to='/projects' className='btn btn-default button'><span className='glyphicon glyphicon-menu-left buttonGlyph'/>Back to Projects</Link>
           </div>
         </div>
       </DocumentTitle>

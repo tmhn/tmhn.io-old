@@ -45,6 +45,22 @@ html {
   padding-top: 30px;
 }
 
+.navBrand {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navBrand:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navDivider {
+  border-top: 2px solid #FFF;
+  float: right;
+  width: 90%;
+}
+
 .navSubbar > * {
   margin-top: 25px;
   color: #fff;
@@ -65,7 +81,11 @@ html {
   color: #24CC82;
   border: 1.5px solid #24CC82;
   color: #24CC82;
-  font-size: 16px; 
+  font-size: 16px;
+  padding-left: 15px; 
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
 }
 
 .button:hover {
@@ -74,6 +94,11 @@ html {
   text-decoration: none;
   color: #FFF;
 }
+
+.buttonGlyph {
+  top: 2px;
+  padding-right: 5px;
+} 
 
 /* -- Mobile menu toggle button --*/
 .navbar-toggle {

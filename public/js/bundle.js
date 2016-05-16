@@ -25331,7 +25331,7 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', style: nav },
+	            { to: '/', className: 'navBrand' },
 	            'Tom Hanson'
 	          )
 	        ),
@@ -25340,11 +25340,11 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'http://instagram.com/tmhn', style: nav },
+	            { href: 'http://instagram.com/tmhn', className: 'navBrand' },
 	            '@tmhn'
 	          )
 	        ),
-	        _react2.default.createElement('hr', { style: navbarDivider }),
+	        _react2.default.createElement('hr', { className: 'navDivider' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'navSubbar' },
@@ -25391,18 +25391,6 @@
 
 	  return Sidebar;
 	}(_react2.default.Component);
-
-	var nav = {
-	  color: '#FFF',
-	  textDecoration: 'none'
-	};
-
-	var navbarDivider = {
-	  borderTopWidth: 2,
-	  color: '#FFF',
-	  float: 'right',
-	  width: '90%'
-	};
 
 	exports.default = Sidebar;
 
@@ -45308,13 +45296,13 @@
 	            _react2.default.createElement(
 	              'h4',
 	              null,
-	              'Doppio and DoppioHealth'
+	              'DoppioHealth'
 	            ),
 	            _react2.default.createElement('hr', null),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
+	              'DoppioHealth is a framework that allows healthcare professionals to create personalised mobile applications for patients to monitor their daily activities. Comprising of a Node.js web application with a React.js front-end, MongoDB data store and then a React Native iOS component, this project was submitted as my dissertation project.'
 	            ),
 	            _react2.default.createElement(
 	              _reactRouter.Link,
@@ -45486,6 +45474,8 @@
 
 	var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
+	var _reactRouter = __webpack_require__(33);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -45508,24 +45498,33 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
-	        { title: 'Doppio - Tom Hanson' },
+	        { title: 'DoppioHealth - Tom Hanson' },
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement(_pageHeader2.default, { text: 'Doppio' }),
+	          _react2.default.createElement(_pageHeader2.default, { text: 'DoppioHealth' }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'pageContent' },
 	            _react2.default.createElement(
 	              'h4',
 	              null,
-	              'Doppio and DoppioHealth'
+	              'DoppioHealth'
 	            ),
 	            _react2.default.createElement('hr', null),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Helvetica actually chambray disrupt, fixie tousled street art YOLO messenger bag godard. Direct trade mixtape typewriter man bun, flannel lumbersexual portland scenester kogi taxidermy umami. Chillwave gochujang kombucha bushwick hoodie, migas vice single-origin coffee. Ennui cardigan twee hella synth put a bird on it, swag affogato four dollar toast jean shorts sriracha hoodie XOXO kombucha. Chia cliche distillery, disrupt banjo thundercats cred bicycle rights art party tofu pabst affogato roof party kale chips. Polaroid pour-over farm-to-table photo booth, you probably haven\'t heard of them post-ironic banh mi four loko next level intelligentsia venmo whatever. Cray disrupt yuccie, messenger bag actually fashion axe hella craft beer keytar meh gastropub fanny pack selfies sartorial mumblecore'
+	              'DoppioHealth is a system that was developed as part of my undergraduate Computer Science degree for my dissertation. The purpose of the system was to allow healthcare professionals to create personalised mobile applications for patients. Rather than downloading generic solutions that cater for many situations, the DoppioHealth iOS application will be customised for the patient with no excess functionality. The DoppioHealth system comprises of a React.js web application and a React Native iOS application that collaborate together.',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement('br', null),
+	              'DoppioHealth originally implemented a Google Blockly visual programming user-interface, however after a Feasibility test conducted using the technologies, the decision was taken to move towards a solution that would ease data entry on behalf of the healthcare professional.'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/projects', className: 'btn btn-default button' },
+	              _react2.default.createElement('span', { className: 'glyphicon glyphicon-menu-left buttonGlyph' }),
+	              'Back to Projects'
 	            )
 	          )
 	        )
