@@ -45326,7 +45326,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'DoppioHealth is a framework that allows healthcare professionals to create personalised mobile applications for patients to monitor their daily activities. Comprising of a Node.js web application with a React.js front-end, MongoDB data store and then a React Native iOS component, this project was submitted as my dissertation project.'
+	              'As part of my final year studies, I studied Advanced Web Applications with a focus on .Net web apps. The context of the module was to produce a web application similar to UCAS that consumes two XML web services whilst being highly functional to the user.'
 	            ),
 	            _react2.default.createElement(
 	              _reactRouter.Link,
@@ -45623,7 +45623,14 @@
 	              'Apollo'
 	            ),
 	            _react2.default.createElement('hr', null),
-	            _react2.default.createElement('p', null),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Apollo is the assignment I completed for my Advanced Web Applications module as part of my final year. The brief was to produce a web application using techniques described in lectures that would allow prospective higher education students to apply for University courses at institutions. This application was made possible by consuming XML web services to provide the courses and Universities.',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement('br', null),
+	              '            '
+	            ),
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/projects', className: 'btn btn-default button' },
