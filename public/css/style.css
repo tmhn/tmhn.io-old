@@ -201,6 +201,10 @@ html {
   .content { width: 96%; }
   .mainMenu { display: none }
   
+  .sidebar {
+    padding-right: 0;
+  }
+
   .mobileNavbar { 
     display: block; 
     padding-left: 0px;
