@@ -19,7 +19,12 @@ html {
   MintGreen: #6AA897;
   FlatGreen: #24CC82;
   MidnightBlue: #2c3e50;
+  FlatGrey: #7B7B82;
 */
+
+.colorText {
+  color: #24CC82;
+}
 
 .containerFluid {
   padding-left: 200px;

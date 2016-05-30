@@ -45177,6 +45177,40 @@
 	              null,
 	              'About Tom'
 	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row', style: iconRow },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-xs-4 col-sm-4 col-md-4 text-center' },
+	                _react2.default.createElement('img', { style: websitesIcon, src: 'images/icons/website.png', className: 'center-block img-responsive' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: iconText },
+	                  'Websites'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-xs-4 col-sm-4 col-md-4 text-center' },
+	                _react2.default.createElement('img', { style: appsIcon, src: 'images/icons/app.png', className: 'center-block img-responsive' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: iconText },
+	                  'Apps'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-xs-4 col-sm-4 col-md-4 text-center' },
+	                _react2.default.createElement('img', { style: designIcon, src: 'images/icons/design.png', className: 'center-block img-responsive' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  { style: iconText },
+	                  'UI/UX'
+	                )
+	              )
+	            ),
 	            _react2.default.createElement('hr', null),
 	            _react2.default.createElement(
 	              'p',
@@ -45226,7 +45260,7 @@
 	              'If you\'d like to know a little more, then please feel free to download my ',
 	              _react2.default.createElement(
 	                'a',
-	                { href: '', download: '', className: 'btn btn-default button' },
+	                { href: '', download: '', className: 'colorText' },
 	                'CV'
 	              )
 	            )
@@ -45238,6 +45272,30 @@
 
 	  return About;
 	}(_react2.default.Component);
+
+	var iconRow = {
+	  paddingTop: 20
+	};
+
+	var iconText = {
+	  paddingTop: 20,
+	  fontSize: 18
+	};
+
+	var websitesIcon = {
+	  height: 59,
+	  width: 70
+	};
+
+	var appsIcon = {
+	  height: 59,
+	  width: 70
+	};
+
+	var designIcon = {
+	  height: 59,
+	  width: 59
+	};
 
 	exports.default = About;
 
