@@ -45472,7 +45472,7 @@
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'mailto:itomhanson@gmail.com' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/ios7-email-outline.png' })
+	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/email-outline.png' })
 	                ),
 	                _react2.default.createElement(
 	                  'a',
@@ -45486,7 +45486,7 @@
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://github.com/tmhn' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-github-outline.png' })
+	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/github-outline.png' })
 	                ),
 	                _react2.default.createElement(
 	                  'a',
@@ -45500,7 +45500,7 @@
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'https://uk.linkedin.com/in/thomasmhanson' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-linkedin-outline.png' })
+	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/linkedin-outline.png' })
 	                ),
 	                _react2.default.createElement(
 	                  'a',
@@ -45514,7 +45514,7 @@
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://twitter.com/iTomHanson' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/social-twitter-outline.png' })
+	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/twitter-outline.png' })
 	                ),
 	                _react2.default.createElement(
 	                  'a',

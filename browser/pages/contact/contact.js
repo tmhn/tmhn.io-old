@@ -15,19 +15,19 @@ class Contact extends React.Component {
             <hr />
             <div className='container'>
               <div className='row' style={elementRow}>
-                <a href='mailto:itomhanson@gmail.com'><img className='contactIcon' src='images/icons/ios7-email-outline.png' /></a>
+                <a href='mailto:itomhanson@gmail.com'><img className='contactIcon' src='images/icons/email-outline.png' /></a>
                 <a href='mailto:itomhanson@gmail.com' style={linkText}>Email</a>
               </div>
               <div className='row' style={elementRow}>
-                <a href='http://github.com/tmhn'><img className='contactIcon' src='images/icons/social-github-outline.png' /></a>
+                <a href='http://github.com/tmhn'><img className='contactIcon' src='images/icons/github-outline.png' /></a>
                 <a href='http://github.com/tmhn' style={linkText}>GitHub</a>
               </div>
               <div className='row' style={elementRow}>
-                <a href='https://uk.linkedin.com/in/thomasmhanson'><img className='contactIcon' src='images/icons/social-linkedin-outline.png' /></a>
+                <a href='https://uk.linkedin.com/in/thomasmhanson'><img className='contactIcon' src='images/icons/linkedin-outline.png' /></a>
                 <a href='https://uk.linkedin.com/in/thomasmhanson' style={linkText}>LinkedIn</a>
               </div>
               <div className='row' style={elementRow}>
-                <a href='http://twitter.com/iTomHanson'><img className='contactIcon' src='images/icons/social-twitter-outline.png' /></a>
+                <a href='http://twitter.com/iTomHanson'><img className='contactIcon' src='images/icons/twitter-outline.png' /></a>
                 <a href='http://twitter.com/iTomHanson' style={linkText}>Twitter</a>
               </div>   
             </div>
