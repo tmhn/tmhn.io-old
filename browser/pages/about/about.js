@@ -24,7 +24,7 @@ class About extends React.Component {
               </div>
               <div className='col-xs-4 col-sm-4 col-md-4 text-center'>
                 <img style={designIcon} src='images/icons/design.png' className='center-block img-responsive' />
-                <p style={iconText}>UI/UX</p>
+                <p style={iconText}>UI / UX</p>
               </div>
             </div>
             <hr />
@@ -46,7 +46,8 @@ var iconRow = {
 
 var iconText = {
   paddingTop: 20,
-  fontSize: 18
+  fontSize: 18,
+  color: '#24CC82'
 }
 
 var websitesIcon = {

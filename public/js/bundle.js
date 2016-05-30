@@ -45207,7 +45207,7 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  { style: iconText },
-	                  'UI/UX'
+	                  'UI / UX'
 	                )
 	              )
 	            ),
@@ -45279,7 +45279,8 @@
 
 	var iconText = {
 	  paddingTop: 20,
-	  fontSize: 18
+	  fontSize: 18,
+	  color: '#24CC82'
 	};
 
 	var websitesIcon = {
