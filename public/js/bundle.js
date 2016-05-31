@@ -25307,6 +25307,10 @@
 
 	var _reactRouter = __webpack_require__(33);
 
+	var _site = __webpack_require__(504);
+
+	var _site2 = _interopRequireDefault(_site);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25336,7 +25340,7 @@
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/', className: 'navBrand' },
-	            'Tom Hanson'
+	            _site2.default.site.fullName
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -25345,7 +25349,7 @@
 	          _react2.default.createElement(
 	            'a',
 	            { href: 'http://instagram.com/tmhn', className: 'navBrand' },
-	            '@tmhn'
+	            _site2.default.site.instagram[0].name
 	          )
 	        ),
 	        _react2.default.createElement('hr', { className: 'navDivider' }),
@@ -45717,6 +45721,61 @@
 	}(_react2.default.Component);
 
 	exports.default = WebApps;
+
+/***/ },
+/* 504 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+	  "site": {
+	    "firstName": "Tom",
+	    "lastName": "Hanson",
+	    "fullName": "Tom Hanson",
+	    "shortName": "tmhn",
+	    "instagram": [{
+	      "name": "@tmhn",
+	      "address": "http://instagram.com/tmhn"
+	    }]
+	  },
+	  "pageLinks": {
+	    "home": [{
+	      "name": "Home",
+	      "address": "/"
+	    }],
+	    "about": [{
+	      "name": "About",
+	      "address": "about"
+	    }],
+	    "projects": [{
+	      "name": "Projects",
+	      "address": "projects"
+	    }],
+	    "contact": [{
+	      "name": "Contact",
+	      "address": "contact"
+	    }]
+	  },
+	  "socialLinks": {
+	    "mail": [{
+	      "name": "Email",
+	      "address": "mailto:tom@tmhn.io"
+	    }],
+	    "github": [{
+	      "name": "GitHub",
+	      "address": "http://github.com/tmhn"
+	    }],
+	    "linkedIn": [{
+	      "name": "LinkedIn",
+	      "address": "https://www.linkedin.com/in/thomasmhanson"
+	    }],
+	    "twitter": [{
+	      "name": "Twitter",
+	      "address": "http://twitter.com/iTomHanson"
+	    }]
+	  }
+	};
 
 /***/ }
 /******/ ]);
