@@ -25401,6 +25401,10 @@
 
 	var _reactRouter = __webpack_require__(33);
 
+	var _site = __webpack_require__(504);
+
+	var _site2 = _interopRequireDefault(_site);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25412,18 +25416,16 @@
 	var Menu = function (_React$Component) {
 	  _inherits(Menu, _React$Component);
 
-	  function Menu(props) {
+	  function Menu() {
 	    _classCallCheck(this, Menu);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Menu).call(this, props));
-
-	    _this.state = {};
-	    return _this;
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Menu).apply(this, arguments));
 	  }
 
 	  _createClass(Menu, [{
 	    key: 'render',
 	    value: function render() {
+	      var links = _site2.default.pageLinks;
 	      var navbar = _react2.default.createElement(
 	        _reactBootstrap.Navbar,
 	        { style: navbarMenu, className: 'navbar navbar-default navbar-fixed-top mobileNavbar' },
@@ -25447,42 +25449,19 @@
 	          _react2.default.createElement(
 	            _reactBootstrap.Nav,
 	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1 },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/', style: navbarLinks },
-	                'Home'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 2 },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'about', style: navbarLinks },
-	                'About'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 3 },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'projects', style: navbarLinks },
-	                'Projects'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 4 },
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'contact', style: navbarLinks },
-	                'Contact'
-	              )
-	            )
+	            links.map(function (_ref, index) {
+	              var name = _ref.name;
+	              var address = _ref.address;
+	              return _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: index },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: address, style: navbarLinks },
+	                  name
+	                )
+	              );
+	            })
 	          )
 	        )
 	      );

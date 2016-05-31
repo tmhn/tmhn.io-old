@@ -3,14 +3,12 @@
 import React from 'react'
 import { Nav, NavItem, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router'
+import content from '../content/site'
 
 class Menu extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
 
   render () {
+    const links = content.pageLinks
     const navbar = (
       <Navbar style={navbarMenu} className='navbar navbar-default navbar-fixed-top mobileNavbar'>
         <Navbar.Header className='container container-fluid' style={navbarHeader}>
@@ -21,18 +19,11 @@ class Menu extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-          <NavItem eventKey={1}>
-            <Link to='/' style={navbarLinks}>Home</Link>
-          </NavItem>
-          <NavItem eventKey={2}>
-            <Link to='about' style={navbarLinks}>About</Link>
-            </NavItem>
-          <NavItem eventKey={3}>
-            <Link to='projects' style={navbarLinks}>Projects</Link>
-          </NavItem>
-          <NavItem eventKey={4}>
-            <Link to='contact' style={navbarLinks}>Contact</Link>
-          </NavItem>
+            {links.map(({name, address}, index) =>
+              <NavItem eventKey={index}>
+                <Link to={address} style={navbarLinks}>{name}</Link>
+              </NavItem>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
