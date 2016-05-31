@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
     return (
       <div className='mainMenu'>
         <h2><Link to='/' className='navBrand'>{content.site.fullName}</Link></h2>
-        <h5><a href={content.site.instagram[0].address} className='navBrand'>{content.site.instagram[0].name}</a></h5>
+        <h5><a href={content.site.instagram.address} className='navBrand'>{content.site.instagram.name}</a></h5>
         <hr className='navDivider'/>
         <div className='navSubbar'>
           {links.map(({name, address}, index) =>

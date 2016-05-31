@@ -25350,8 +25350,8 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: _site2.default.site.instagram[0].address, className: 'navBrand' },
-	            _site2.default.site.instagram[0].name
+	            { href: _site2.default.site.instagram.address, className: 'navBrand' },
+	            _site2.default.site.instagram.name
 	          )
 	        ),
 	        _react2.default.createElement('hr', { className: 'navDivider' }),
@@ -45692,10 +45692,10 @@
 	    "lastName": "Hanson",
 	    "fullName": "Tom Hanson",
 	    "shortName": "tmhn",
-	    "instagram": [{
+	    "instagram": {
 	      "name": "@tmhn",
 	      "address": "http://instagram.com/tmhn"
-	    }]
+	    }
 	  },
 	  "pageLinks": [{
 	    "name": "Home",

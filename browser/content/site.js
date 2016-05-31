@@ -4,10 +4,10 @@ module.exports = {
     "lastName": "Hanson",
     "fullName": "Tom Hanson",
     "shortName": "tmhn",
-    "instagram": [{
+    "instagram": {
       "name": "@tmhn",
       "address": "http://instagram.com/tmhn"
-    }]
+    }
   },
   "pageLinks": [{
       "name": "Home",
