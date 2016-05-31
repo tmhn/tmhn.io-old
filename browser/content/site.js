@@ -9,40 +9,36 @@ module.exports = {
       "address": "http://instagram.com/tmhn"
     }]
   },
-  "pageLinks": {
-    "home": [{
+  "pageLinks": [{
       "name": "Home",
       "address": "/"
-    }],
-    "about": [{
+    },
+    {
       "name": "About",
       "address": "about"
-    }],
-    "projects": [{
+    },
+    {
       "name": "Projects",
       "address": "projects"
-    }],
-    "contact": [{
+    },
+    {
       "name": "Contact",
       "address": "contact"
-    }]
-  },
-  "socialLinks": {
-    "mail": [{
+  }],
+  "socialLinks": [{
       "name": "Email",
       "address": "mailto:tom@tmhn.io"
-    }],
-    "github": [{
+    },
+    {
       "name": "GitHub",
       "address": "http://github.com/tmhn"
-    }],
-    "linkedIn": [{
+    },
+    {
       "name": "LinkedIn",
       "address": "https://www.linkedin.com/in/thomasmhanson"
-    }],
-    "twitter": [{
+    },
+    {
       "name": "Twitter",
       "address": "http://twitter.com/iTomHanson"
-    }]
-  }
+  }]
 }

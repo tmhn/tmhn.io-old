@@ -25331,6 +25331,8 @@
 	  _createClass(Sidebar, [{
 	    key: 'render',
 	    value: function render() {
+	      var links = _site2.default.pageLinks;
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'mainMenu' },
@@ -25348,7 +25350,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'http://instagram.com/tmhn', className: 'navBrand' },
+	            { href: _site2.default.site.instagram[0].address, className: 'navBrand' },
 	            _site2.default.site.instagram[0].name
 	          )
 	        ),
@@ -25356,42 +25358,19 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'navSubbar' },
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/' },
-	              'Home'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: 'about' },
-	              'About'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: 'projects' },
-	              'Projects'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: 'contact' },
-	              'Contact'
-	            )
-	          )
+	          links.map(function (_ref, index) {
+	            var name = _ref.name;
+	            var address = _ref.address;
+	            return _react2.default.createElement(
+	              'h4',
+	              { key: index },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: address },
+	                name
+	              )
+	            );
+	          })
 	        )
 	      );
 	    }
@@ -45739,42 +45718,32 @@
 	      "address": "http://instagram.com/tmhn"
 	    }]
 	  },
-	  "pageLinks": {
-	    "home": [{
-	      "name": "Home",
-	      "address": "/"
-	    }],
-	    "about": [{
-	      "name": "About",
-	      "address": "about"
-	    }],
-	    "projects": [{
-	      "name": "Projects",
-	      "address": "projects"
-	    }],
-	    "contact": [{
-	      "name": "Contact",
-	      "address": "contact"
-	    }]
-	  },
-	  "socialLinks": {
-	    "mail": [{
-	      "name": "Email",
-	      "address": "mailto:tom@tmhn.io"
-	    }],
-	    "github": [{
-	      "name": "GitHub",
-	      "address": "http://github.com/tmhn"
-	    }],
-	    "linkedIn": [{
-	      "name": "LinkedIn",
-	      "address": "https://www.linkedin.com/in/thomasmhanson"
-	    }],
-	    "twitter": [{
-	      "name": "Twitter",
-	      "address": "http://twitter.com/iTomHanson"
-	    }]
-	  }
+	  "pageLinks": [{
+	    "name": "Home",
+	    "address": "/"
+	  }, {
+	    "name": "About",
+	    "address": "about"
+	  }, {
+	    "name": "Projects",
+	    "address": "projects"
+	  }, {
+	    "name": "Contact",
+	    "address": "contact"
+	  }],
+	  "socialLinks": [{
+	    "name": "Email",
+	    "address": "mailto:tom@tmhn.io"
+	  }, {
+	    "name": "GitHub",
+	    "address": "http://github.com/tmhn"
+	  }, {
+	    "name": "LinkedIn",
+	    "address": "https://www.linkedin.com/in/thomasmhanson"
+	  }, {
+	    "name": "Twitter",
+	    "address": "http://twitter.com/iTomHanson"
+	  }]
 	};
 
 /***/ }
