@@ -45389,6 +45389,10 @@
 
 	var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
+	var _site = __webpack_require__(504);
+
+	var _site2 = _interopRequireDefault(_site);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -45409,6 +45413,8 @@
 	  _createClass(Contact, [{
 	    key: 'render',
 	    value: function render() {
+	      var social = _site2.default.socialLinks;
+
 	      return _react2.default.createElement(
 	        _reactDocumentTitle2.default,
 	        { title: 'Contact - Tom Hanson' },
@@ -45428,62 +45434,25 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'container' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row', style: elementRow },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'mailto:itomhanson@gmail.com' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/email-outline.png' })
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'mailto:itomhanson@gmail.com', style: linkText },
-	                  'Email'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row', style: elementRow },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://github.com/tmhn' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/github-outline.png' })
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://github.com/tmhn', style: linkText },
-	                  'GitHub'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row', style: elementRow },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://uk.linkedin.com/in/thomasmhanson' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/linkedin-outline.png' })
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://uk.linkedin.com/in/thomasmhanson', style: linkText },
-	                  'LinkedIn'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row', style: elementRow },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://twitter.com/iTomHanson' },
-	                  _react2.default.createElement('img', { className: 'contactIcon', src: 'images/icons/twitter-outline.png' })
-	                ),
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://twitter.com/iTomHanson', style: linkText },
-	                  'Twitter'
-	                )
-	              )
+	              social.map(function (_ref, index) {
+	                var name = _ref.name;
+	                var address = _ref.address;
+	                var icon = _ref.icon;
+	                return _react2.default.createElement(
+	                  'div',
+	                  { className: 'row', style: elementRow },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: address },
+	                    _react2.default.createElement('img', { className: 'contactIcon', src: icon })
+	                  ),
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: address, style: linkText },
+	                    name
+	                  )
+	                );
+	              })
 	            )
 	          )
 	        )
@@ -45712,16 +45681,20 @@
 	  }],
 	  "socialLinks": [{
 	    "name": "Email",
-	    "address": "mailto:tom@tmhn.io"
+	    "address": "mailto:tom@tmhn.io",
+	    "icon": "images/icons/email-outline.png"
 	  }, {
 	    "name": "GitHub",
-	    "address": "http://github.com/tmhn"
+	    "address": "http://github.com/tmhn",
+	    "icon": "images/icons/github-outline.png"
 	  }, {
 	    "name": "LinkedIn",
-	    "address": "https://www.linkedin.com/in/thomasmhanson"
+	    "address": "https://www.linkedin.com/in/thomasmhanson",
+	    "icon": "images/icons/linkedin-outline.png"
 	  }, {
 	    "name": "Twitter",
-	    "address": "http://twitter.com/iTomHanson"
+	    "address": "http://twitter.com/iTomHanson",
+	    "icon": "images/icons/twitter-outline.png"
 	  }]
 	};
 

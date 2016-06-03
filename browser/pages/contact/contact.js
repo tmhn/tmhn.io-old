@@ -3,9 +3,12 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import PageHeader from '../../components/page-header'
+import content from '../../content/site'
 
 class Contact extends React.Component {
   render () {
+    const social = content.socialLinks
+
     return (
       <DocumentTitle title='Contact - Tom Hanson'>
         <div>
@@ -14,22 +17,14 @@ class Contact extends React.Component {
             <h4>Some of the best ways to contact me:</h4>
             <hr />
             <div className='container'>
-              <div className='row' style={elementRow}>
-                <a href='mailto:itomhanson@gmail.com'><img className='contactIcon' src='images/icons/email-outline.png' /></a>
-                <a href='mailto:itomhanson@gmail.com' style={linkText}>Email</a>
-              </div>
-              <div className='row' style={elementRow}>
-                <a href='http://github.com/tmhn'><img className='contactIcon' src='images/icons/github-outline.png' /></a>
-                <a href='http://github.com/tmhn' style={linkText}>GitHub</a>
-              </div>
-              <div className='row' style={elementRow}>
-                <a href='https://uk.linkedin.com/in/thomasmhanson'><img className='contactIcon' src='images/icons/linkedin-outline.png' /></a>
-                <a href='https://uk.linkedin.com/in/thomasmhanson' style={linkText}>LinkedIn</a>
-              </div>
-              <div className='row' style={elementRow}>
-                <a href='http://twitter.com/iTomHanson'><img className='contactIcon' src='images/icons/twitter-outline.png' /></a>
-                <a href='http://twitter.com/iTomHanson' style={linkText}>Twitter</a>
-              </div>   
+            
+              {social.map(({name, address, icon}, index) =>
+                <div className='row' style={elementRow}>
+                  <a href={address}><img className='contactIcon' src={icon} /></a>
+                  <a href={address} style={linkText}>{name}</a>
+                </div>
+              )}
+
             </div>
           </div>
         </div>
