@@ -25436,8 +25436,8 @@
 	            _reactBootstrap.Navbar.Brand,
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '/', style: navbarBrand },
+	              _reactRouter.Link,
+	              { to: '/', style: navbarBrand },
 	              'Tom Hanson'
 	            )
 	          ),
@@ -25454,7 +25454,7 @@
 	              var address = _ref.address;
 	              return _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: index },
+	                { eventKey: index, key: index },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: address, style: navbarLinks },
@@ -45148,7 +45148,7 @@
 	                _react2.default.createElement('img', { style: websitesIcon, src: 'images/icons/website.png', className: 'center-block img-responsive' }),
 	                _react2.default.createElement(
 	                  'p',
-	                  { style: iconText },
+	                  { className: 'colorTextHeadings' },
 	                  'Websites'
 	                )
 	              ),
@@ -45158,7 +45158,7 @@
 	                _react2.default.createElement('img', { style: appsIcon, src: 'images/icons/app.png', className: 'center-block img-responsive' }),
 	                _react2.default.createElement(
 	                  'p',
-	                  { style: iconText },
+	                  { className: 'colorTextHeadings' },
 	                  'Apps'
 	                )
 	              ),
@@ -45168,7 +45168,7 @@
 	                _react2.default.createElement('img', { style: designIcon, src: 'images/icons/design.png', className: 'center-block img-responsive' }),
 	                _react2.default.createElement(
 	                  'p',
-	                  { style: iconText },
+	                  { className: 'colorTextHeadings' },
 	                  'UI / UX'
 	                )
 	              )
@@ -45237,12 +45237,6 @@
 
 	var iconRow = {
 	  paddingTop: 20
-	};
-
-	var iconText = {
-	  paddingTop: 20,
-	  fontSize: 18,
-	  color: '#24CC82'
 	};
 
 	var websitesIcon = {

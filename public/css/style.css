@@ -26,6 +26,12 @@ html {
   color: #24CC82;
 }
 
+.colorTextHeadings {
+  color: #24CC82;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
 .containerFluid {
   padding-left: 200px;
 }
@@ -99,6 +105,20 @@ html {
 }
 
 .button:hover {
+  background-color: #24CC82;
+  border: 1.5px solid #24CC82;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.button:active {
+  background-color: #24CC82;
+  border: 1.5px solid #24CC82;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.button:focus {
   background-color: #24CC82;
   border: 1.5px solid #24CC82;
   text-decoration: none;

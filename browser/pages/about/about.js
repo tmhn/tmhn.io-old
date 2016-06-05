@@ -16,15 +16,15 @@ class About extends React.Component {
             <div className='row' style={iconRow}>
               <div className='col-xs-4 col-sm-4 col-md-4 text-center'>
                 <img style={websitesIcon} src='images/icons/website.png' className='center-block img-responsive' />
-                <p style={iconText}>Websites</p>
+                <p className='colorTextHeadings'>Websites</p>
               </div>
               <div className='col-xs-4 col-sm-4 col-md-4 text-center'>
                 <img style={appsIcon} src='images/icons/app.png' className='center-block img-responsive' />
-                <p style={iconText}>Apps</p>
+                <p className='colorTextHeadings'>Apps</p>
               </div>
               <div className='col-xs-4 col-sm-4 col-md-4 text-center'>
                 <img style={designIcon} src='images/icons/design.png' className='center-block img-responsive' />
-                <p style={iconText}>UI / UX</p>
+                <p className='colorTextHeadings'>UI / UX</p>
               </div>
             </div>
             <hr />
@@ -42,12 +42,6 @@ class About extends React.Component {
 
 var iconRow = {
   paddingTop: 20
-}
-
-var iconText = {
-  paddingTop: 20,
-  fontSize: 18,
-  color: '#24CC82'
 }
 
 var websitesIcon = {

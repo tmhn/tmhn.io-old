@@ -13,14 +13,14 @@ class Menu extends React.Component {
       <Navbar style={navbarMenu} className='navbar navbar-default navbar-fixed-top mobileNavbar'>
         <Navbar.Header className='container container-fluid' style={navbarHeader}>
           <Navbar.Brand>
-            <a href='/' style={navbarBrand}>Tom Hanson</a>
+            <Link to='/' style={navbarBrand}>Tom Hanson</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
             {links.map(({name, address}, index) =>
-              <NavItem eventKey={index}>
+              <NavItem eventKey={index} key={index}>
                 <Link to={address} style={navbarLinks}>{name}</Link>
               </NavItem>
             )}
