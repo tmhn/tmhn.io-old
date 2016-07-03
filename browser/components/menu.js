@@ -1,7 +1,6 @@
 'use strict'
 
 import React from 'react'
-import { Nav, NavItem, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router'
 import content from '../content/site'
 
@@ -9,27 +8,31 @@ class Menu extends React.Component {
 
   render () {
     const links = content.pageLinks
-    const navbar = (
-      <Navbar style={navbarMenu} className='navbar navbar-default navbar-fixed-top mobileNavbar'>
-        <Navbar.Header className='container container-fluid' style={navbarHeader}>
-          <Navbar.Brand>
-            <Link to='/' style={navbarBrand}>Tom Hanson</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            {links.map(({name, address}, index) =>
-              <NavItem eventKey={index} key={index}>
-                <Link to={address} style={navbarLinks}>{name}</Link>
-              </NavItem>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    )
+
     return (
-      navbar
+      <nav className='navbar navbar-default navbar-fixed-top mobileNavbar' style={navbarMenu}>
+        <div className='container-fluid'>
+          <div className='navbar-header' style={navbarHeader}>
+            <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
+              <span className='sr-only'>Toggle navigation</span>
+              <span className='icon-bar'></span>
+              <span className='icon-bar'></span>
+              <span className='icon-bar'></span>
+            </button>
+            <Link className='navbar-brand' to='/' style={navbarBrand}>Tom Hanson</Link>
+          </div>
+
+          <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+            <ul className='nav navbar-nav'>
+
+              {links.map(({name, address}, index) =>
+                <li eventKey={index} key={index}><Link to={address} style={navbarLinks} data-toggle='collapse' data-target='.navbar-collapse'>{name}</Link></li>
+              )}
+
+            </ul>
+          </div>
+        </div>
+      </nav>
     )
   }
 }
