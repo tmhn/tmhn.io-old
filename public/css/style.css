@@ -227,6 +227,9 @@ html {
 /* Mobile */
 @media (max-width: 767px) {
   html, body {margin: 0; height: 100%; overflow-x: hidden}
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   
   .containerFluid { padding-left: 0 }
   .content { width: 96%; }

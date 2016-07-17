@@ -25552,7 +25552,7 @@
 	  color: '#fff',
 	  fontSize: 18,
 	  fontFamily: 'Avenir',
-	  lineHeight: 3
+	  lineHeight: 2
 	};
 
 	var navbarHeader = {
