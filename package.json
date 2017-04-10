@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "webpack --config webpack-prod.config.js --progress --colors",
-    "lint": "standard",
+    "lint": "eslint",
     "start": "node server.js",
     "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"

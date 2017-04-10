@@ -19,96 +19,60 @@
         "react"
     ],
     "rules": {
-        "comma-dangle": "error",
-
+        "comma-dangle": 2,
         "no-extra-parens": "error",
-
         "no-unsafe-negation": "error",
-
         "valid-jsdoc": "error",
-
-
         "arrow-body-style": ["error", "as-needed"],
-
         "arrow-parens": ["error", "as-needed"],
-
         "arrow-spacing": ["error", {
             "before": true,
             "after": true
         }],
-
         "generator-star-spacing": ["error", "after"],
-
         "no-var": "error",
-
         "prefer-const": "error",
-
         "prefer-rest-params": "error",
-
         "prefer-spread": "error",
-
         "prefer-template": "error",
         "callback-return": "error",
-
         "global-require": "error",
-
         "handle-callback-err": "error",
-
         "no-mixed-requires": "error",
-
         "no-new-require": "error",
-
         "no-path-concat": "error",
-
         "no-process-exit": "error",
         "react/no-array-index-key": ["error"],
-
         "react/prefer-stateless-function": ["error"],
-
         "react/self-closing-comp": ["error", {
             "component": true,
             "html": false
         }],
-
         "react/jsx-closing-bracket-location": ["error", {
             "location": "line-aligned"
         }],
-
         "react/jsx-boolean-value": ["error"],
-
         "react/jsx-curly-spacing": ["error", "never"],
-
         "react/jsx-equals-spacing": ["error", "never"],
-
         "react/jsx-key": ["error"],
-
         "react/jsx-no-bind": ["error", {
             "ignoreRefs": true
         }],
-
         "react/jsx-no-duplicate-props": ["error", {
             "ignoreCase": true
         }],
-
         "react/jsx-pascal-case": ["error"],
-
         "react/jsx-space-before-closing": ["error"],
-
         "react/jsx-tag-spacing": ["error"],
         "block-spacing": ["error", "always"],
         "brace-style": ["error", "1tbs"],
-
         "camelcase": ["error"],
-
         "comma-spacing": ["error", {
             "before": false,
             "after": true
         }],
-
         "comma-style": ["error", "last"],
-
         "computed-property-spacing": ["error", "never"],
-
         "consistent-this": ["error", "self"],
         "eol-last": ["error", "always"],
         "func-call-spacing": ["error", "never"],

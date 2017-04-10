@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/node
 
+public/js/bundle.js
+public/js/bundle.js.map
+
 ### Node ###
 # Logs
 logs
