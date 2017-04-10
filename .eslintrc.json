@@ -1,0 +1,173 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "commonjs": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "comma-dangle": "error",
+
+        "no-extra-parens": "error",
+
+        "no-unsafe-negation": "error",
+
+        "valid-jsdoc": "error",
+
+
+        "arrow-body-style": ["error", "as-needed"],
+
+        "arrow-parens": ["error", "as-needed"],
+
+        "arrow-spacing": ["error", {
+            "before": true,
+            "after": true
+        }],
+
+        "generator-star-spacing": ["error", "after"],
+
+        "no-var": "error",
+
+        "prefer-const": "error",
+
+        "prefer-rest-params": "error",
+
+        "prefer-spread": "error",
+
+        "prefer-template": "error",
+        "callback-return": "error",
+
+        "global-require": "error",
+
+        "handle-callback-err": "error",
+
+        "no-mixed-requires": "error",
+
+        "no-new-require": "error",
+
+        "no-path-concat": "error",
+
+        "no-process-exit": "error",
+        "react/no-array-index-key": ["error"],
+
+        "react/prefer-stateless-function": ["error"],
+
+        "react/self-closing-comp": ["error", {
+            "component": true,
+            "html": false
+        }],
+
+        "react/jsx-closing-bracket-location": ["error", {
+            "location": "line-aligned"
+        }],
+
+        "react/jsx-boolean-value": ["error"],
+
+        "react/jsx-curly-spacing": ["error", "never"],
+
+        "react/jsx-equals-spacing": ["error", "never"],
+
+        "react/jsx-key": ["error"],
+
+        "react/jsx-no-bind": ["error", {
+            "ignoreRefs": true
+        }],
+
+        "react/jsx-no-duplicate-props": ["error", {
+            "ignoreCase": true
+        }],
+
+        "react/jsx-pascal-case": ["error"],
+
+        "react/jsx-space-before-closing": ["error"],
+
+        "react/jsx-tag-spacing": ["error"],
+        "block-spacing": ["error", "always"],
+        "brace-style": ["error", "1tbs"],
+
+        "camelcase": ["error"],
+
+        "comma-spacing": ["error", {
+            "before": false,
+            "after": true
+        }],
+
+        "comma-style": ["error", "last"],
+
+        "computed-property-spacing": ["error", "never"],
+
+        "consistent-this": ["error", "self"],
+        "eol-last": ["error", "always"],
+        "func-call-spacing": ["error", "never"],
+        "func-names": ["error", "always"],
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "jsx-quotes": ["error", "prefer-double"],
+        "key-spacing": ["error", {
+            "beforeColon": false,
+            "afterColon": true
+        }],
+        "linebreak-style": ["error", "unix"],
+        "max-depth": ["error", {
+            "max": 5
+        }],
+        "max-len": ["error", {
+            "code": 100
+        }],
+        "max-nested-callbacks": ["error", {
+            "max": 4
+        }],
+        "max-statements": ["error", {
+            "max": 20
+        }, {
+            "ignoreTopLevelFunctions": true
+        }],
+        "new-cap": "error",
+        "new-parens": "error",
+        "no-array-constructor": "error",
+        "no-bitwise": "error",
+        "no-inline-comments": "error",
+        "no-lonely-if": "error",
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "no-multiple-empty-lines": "error",
+        "no-negated-condition": "error",
+        "no-nested-ternary": "error",
+        "no-new-object": "error",
+        "no-whitespace-before-property": "error",
+        "no-trailing-spaces": "error",
+        "no-unneeded-ternary": "error",
+        "object-curly-spacing": ["error", "always"],
+        "padded-blocks": ["error", "never"],
+        "quotes": ["error", "double", "avoid-escape"],
+        "semi-spacing": "error",
+        "semi": ["error", "always"],
+        "space-before-blocks": ["error", "always"],
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": "error",
+        "space-unary-ops": ["error", {
+            "words": true,
+            "nonwords": false
+        }],
+        "spaced-comment": ["error", "always"],
+        "no-label-var": "error",
+        "no-shadow-restricted-names": "error",
+        "no-shadow": "error",
+        "no-undef-init": "error",
+        "no-undefined": "error"
+    }
+}

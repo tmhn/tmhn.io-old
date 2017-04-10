@@ -6,7 +6,9 @@ const bodyParser = require('body-parser')
 const compression = require('compression')
 
 let app = express()
-var port = process.env.PORT || 8080
+const host = process.env.HOST || "http://localhost:"
+const port = process.env.PORT || 8080
+const url = `${host}${port}`
 
 app.use(compression())
 app.use(express.static(path.join(__dirname, 'public')))
@@ -23,8 +25,7 @@ function renderMain (req, res) {
 }
 
 app.get('/', renderMain)
-app.get('/*', renderMain)
 
 app.listen(port, () => {
-  console.log('Listening on %d', port)
+  console.log(`Listening at: ${url}`)
 })
