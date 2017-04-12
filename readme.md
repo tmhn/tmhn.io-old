@@ -12,3 +12,15 @@ Consider starting commit messages with these emoji if they apply.
 - :necktie: `:necktie:` when fixing linting errors.
 - :white_check_mark: `:white_check_mark:` when adding tests.
 - :green_heart: `:green_heart:` when fixing tests.
+
+## Installation
+Want to run this site locally?
+
+- `git clone` the repo somewhere safe
+- `npm i`
+- `npm start`
+- The site should be running at `localhost:8080`
+
+## Deployment
+The entire site is hosted on Heroku. Currently there is an env variable set there:
+`NPM_CONFIG_PRODUCTION=false`
