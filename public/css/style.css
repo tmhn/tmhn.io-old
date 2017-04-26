@@ -23,19 +23,15 @@ html {
   FlatGrey: #7B7B82;
 */
 
-.colorText {
-  color: #24CC82;
-}
-
-.colorTextHeadings {
+/*.colorTextHeadings {
   color: #24CC82;
   padding-top: 20px;
   font-size: 18px;
-}
+}*/
 
-.containerFluid {
+/*.containerFluid {
   padding-left: 200px;
-}
+}*/
 
 .mainMenu {
   background-color: #24CC82;
@@ -53,9 +49,9 @@ html {
   color: #FFF;
 }
 
-.navSubbar {
+/*.navSubbar {
   padding-top: 30px;
-}
+}*/
 
 .navBrand {
   color: #FFF;
@@ -78,7 +74,7 @@ html {
   width: 90%;
 }
 
-.navSubbar > * {
+/*.navSubbar > * {
   margin-top: 25px;
   color: #fff;
   color: rgba( 255, 255, 255, 0.6 );
@@ -91,13 +87,12 @@ html {
 
 .navSubbar a:hover {
   color: #fff;
-}
+}*/
 
 .button {
   background-color: #FFF;
   color: #24CC82;
   border: 1.5px solid #24CC82;
-  color: #24CC82;
   font-size: 16px;
   padding-left: 15px;
   padding-right: 15px;
@@ -164,12 +159,12 @@ html {
   margin-top: 5px;
 }
 
-.content {
+/*.content {
   height: 100%;
   min-height: 100%;
   padding-top: 50px;
   padding-bottom: 100px;
-}
+}*/
 
 .pageContent {
   background-color: white;
@@ -209,38 +204,33 @@ html {
 /* -------------------*/
 /* -- Media Queries --*/
 
+/* ================Desktop======================= */
 @media (max-width: 5000px) {
   .mobileNavbar { display: none; }
 }
 
+/* ================Tablet======================= */
 @media (max-width: 1120px) {
-  .containerFluid { padding-left: 90px }
-  .content { width: 80%; padding-top: 50px;}
+  /* .containerFluid { padding-left: 90px }*/
+  /*.content { width: 80%; padding-top: 50px;}*/
   .mainMenu { width: 200px; }
   .mobileNavbar { display: none; }
 }
 
-@media (max-width: 930px) {
-  .mainMenu { active: false; }
-  .mobileNavbar { display: none; }
-}
-
-/* Mobile */
+/* ================Mobile======================= */
 @media (max-width: 767px) {
   html, body {margin: 0; height: 100%; overflow-x: hidden}
 
-
-
-  .containerFluid {
+  /*.containerFluid {
     padding-left: 0;
     -webkit-overflow-scrolling: touch;
-  }
-  .content { width: 96%; }
+  }*/
+  /*.content { width: 96%; } */
   .mainMenu { display: none }
 
-  .sidebar {
+  /*.sidebar {
     padding-right: 0;
-  }
+  }*/
 
   .mobileNavbar {
     display: block;

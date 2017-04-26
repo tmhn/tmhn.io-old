@@ -12,9 +12,17 @@ const styles = StyleSheet.create({
         color: "#fff"
     },
     navbarMenu: {
-        minHeight: 60,
         backgroundColor: "#24CC82",
-        border: 0
+        "@media (max-width: 5000px)": {
+            display: "none"
+        },
+        "@media (max-width: 1120px)": {
+            display: "none"
+        },
+        "@media (max-width: 767px)": {
+            display: "block",
+            paddingLeft: 0
+        }
     },
     navbarLinks: {
         color: "#fff",
@@ -30,7 +38,7 @@ const styles = StyleSheet.create({
 
 const Menu = () =>
     <nav
-        className={`navbar navbar-default navbar-fixed-top mobileNavbar ${css(styles.navbarMenu)}`}
+        className={`navbar navbar-default navbar-fixed-top ${css(styles.navbarMenu)}`}
     >
         <div className="container-fluid">
             <div className={`navbar-header ${css(styles.navbarHeader)}`}>

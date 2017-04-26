@@ -2,8 +2,19 @@
 
 import React from "react";
 import DocumentTitle from "react-document-title";
+import { StyleSheet, css } from "aphrodite";
+import * as Color from "../../global/colors";
+import { ECHO, ENNIS } from "../../global/sizes";
 import PageHeader from "../../components/page-header";
 import { Link } from "react-router";
+
+const styles = StyleSheet.create({
+    heading: {
+        color: Color.NEVIS,
+        paddingTop: ENNIS,
+        fontSize: ECHO
+    }
+});
 
 const About = () =>
     <DocumentTitle title="About - Tom Hanson">
@@ -18,7 +29,7 @@ const About = () =>
                                 src="images/icons/website.png"
                                 className="center-block img-responsive"
                             />
-                            <p className="colorTextHeadings">Websites</p>
+                            <p className={css(styles.heading)}>Websites</p>
                         </div>
                         <div className="col-xs-4 col-sm-4 col-md-4 text-center">
                             <img
@@ -26,7 +37,7 @@ const About = () =>
                                 src="images/icons/app.png"
                                 className="center-block img-responsive"
                             />
-                            <p className="colorTextHeadings">Apps</p>
+                            <p className={css(styles.heading)}>Apps</p>
                         </div>
                         <div className="col-xs-4 col-sm-4 col-md-4 text-center">
                             <img
@@ -34,7 +45,7 @@ const About = () =>
                                 src="images/icons/design.png"
                                 className="center-block img-responsive"
                             />
-                            <p className="colorTextHeadings">UI / UX</p>
+                            <p className={css(styles.heading)}>UI / UX</p>
                         </div>
                     </div>
                     <hr />
@@ -70,11 +81,6 @@ const About = () =>
                         I am currently furthering my knowledge of these frameworks by
                         producing a number of side projects, these can be found
                         <Link to="projects"> here</Link>.
-                    </p>
-                    <br />
-                    <p>
-                        If you'd like to know a little more, then please feel free to
-                        download my <a href="" download="" className="colorText">CV</a>
                     </p>
             </div>
         </div>
