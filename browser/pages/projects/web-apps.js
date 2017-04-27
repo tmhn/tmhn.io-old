@@ -22,8 +22,7 @@ const WebApps = () =>
                     <br /><br />
                 </p>
                 <Link to="/projects" className="btn btn-default button">
-                    <span className="buttonGlyph" />
-                        Back to Projects
+                    Back to Projects
                 </Link>
           </div>
         </div>

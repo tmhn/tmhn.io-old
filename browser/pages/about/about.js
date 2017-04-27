@@ -13,6 +13,17 @@ const styles = StyleSheet.create({
         color: Color.NEVIS,
         paddingTop: ENNIS,
         fontSize: ECHO
+    },
+    content: {
+        backgroundColor: Color.WHITE,
+        fontFamily: "Avenir",
+        padding: "50px"
+    },
+    text: {
+        fontSize: ECHO,
+        lineHeight: "35px",
+        color: "#7B7B82",
+        fontWeight: 100
     }
 });
 
@@ -20,7 +31,7 @@ const About = () =>
     <DocumentTitle title="About - Tom Hanson">
         <div>
             <PageHeader text="About" />
-            <div className="pageContent">
+            <div className={css(styles.content)}>
                 <h4>About Tom</h4>
                     <div className="row" style={iconRow}>
                         <div className="col-xs-4 col-sm-4 col-md-4 text-center">
@@ -49,14 +60,14 @@ const About = () =>
                         </div>
                     </div>
                     <hr />
-                    <p>
+                    <p className={css(styles.text)}>
                         I'm Tom Hanson, a Computer Science graduate from Sheffield Hallam
                         University originally from Leeds. During my time
                         at University I studied a range of topics and concepts relating
                         to Computer Science and Software Engineering.
                     </p>
                     <br />
-                    <p>
+                    <p className={css(styles.text)}>
                         I currently work at
                         <a href="http://skybet.com"> Sky Betting and Gaming</a> in Leeds.
                         I spend my days working solely on a tech stack which consists
@@ -64,14 +75,14 @@ const About = () =>
                         makes up the Football application for our website.
                     </p>
                     <br />
-                    <p>
+                    <p className={css(styles.text)}>
                         During my placement
                         year at <a href="http://next.co.uk">Next Group PLC</a> I worked
                         in the dynamic eCommerce Systems department developing the Next
                         websites and back-end systems.
                     </p>
                     <br />
-                    <p>
+                    <p className={css(styles.text)}>
                         I love learning new things and scratching my own itch, recently
                         this has included using <a href="https://nodejs.org/">Node.js </a>
                         and <a href="https://facebook.github.io/react/">React.js</a> to

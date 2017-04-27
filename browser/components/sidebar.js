@@ -50,6 +50,11 @@ const styles = StyleSheet.create({
         ":hover": {
             color: WHITE
         }
+    },
+    divider: {
+        borderTop: `2px solid ${WHITE}`,
+        float: "right",
+        width: "90%"
     }
 });
 
@@ -60,7 +65,7 @@ const Sidebar = () => <div className={css(styles.menu)}>
                 {content.site.instagram.name}
             </a>
         </h5>
-        <hr className="navDivider" />
+        <hr className={css(styles.divider)} />
         <div className={css(styles.subbar)}>
             {content.pageLinks.map(({ name, address }, index) =>
                 <h4 key={index} className={css(styles.linkHeading)}>
