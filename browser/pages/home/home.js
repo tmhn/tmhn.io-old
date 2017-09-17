@@ -1,32 +1,61 @@
 "use strict";
 
 import React from "react";
-import DocumentTitle from "react-document-title";
-import PageHeader from "../../components/page-header";
+import { css, StyleSheet } from "aphrodite";
+
+const styles = StyleSheet.create({
+    wrapper: {
+        display: "flex",
+        alignItems: "center",
+        height: "100%",
+        padding: 0,
+        margin: 0
+    },
+    leftPanel: {
+        paddingRight: "35px"
+    },
+    rightPanel: {
+        alignItems: "center",
+        float: "right"
+    },
+    title: {
+        fontSize: "65px",
+        fontFamily: "Circular-Bold",
+        color: "#FF5A5F",
+        marginBottom: "0px",
+        marginTop: 0
+    },
+    subtitle: {
+        fontSize: "45px",
+        fontFamily: "Circular-Light",
+        marginTop: "0px",
+        marginBottom: "20px"
+    },
+    intro: {
+        fontFamily: "Circular-Light",
+        marginTop: "25px"
+    }
+});
 
 const Home = () =>
-    <DocumentTitle title="Home - Tom Hanson">
-        <div>
-            <PageHeader text="Hi, I'm Tom" />
-            <div className="pageContent">
-                <h4>Welcome</h4>
-                <hr />
-                <p>I'm a Computer Science graduate from <a href="http://shu.ac.uk">SHU</a>.
-                    I currently work at <a href="http://skybet.com">SkyBet</a> working in the
-                    Bet tribe. I love crafting elegant digital solutions especially from open
-                    source software, with my current favourites being
-                    <a href="https://facebook.github.io/react/"> React.js</a> and
-                    <a href="https://facebook.github.io/react-native/"> React Native </a>
-                    alongside <a href="https://nodejs.org/"> Node.js</a>. These projects are
-                    usually fuelled by flat-whites and bagels.
-                </p>
-                <br />
-                <p>
-                    When not developing new software solutions I am usually training for my next
-                    triathlon, however I am partial to the occasional pastry and strawberry
-                    milkshake.</p>
-            </div>
+    <div className={css(styles.wrapper)}>
+        <div className={css(styles.leftPanel)}>
+            <img src="/images/tmwhn.jpg" />
         </div>
-    </DocumentTitle>;
+        <div className={css(styles.rightPanel)}>
+            <p className={css(styles.title)}>Tom Hanson</p>
+            <p className={css(styles.subtitle)}>Software Engineer</p>
+            <p className={css(styles.intro)}>I work at SkyBet in Leeds</p>
+            <p className={css(styles.intro)}>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>React Native</li>
+                    <li>ES6</li>
+                </ul>
+            </p>
+            <p className={css(styles.intro)}>Find me on <a href="https://twitter.com/iTomHanson">Twitter</a>, on <a href="https://www.strava.com/athletes/tomhanson">Strava</a> or <a href="https://github.com/tmhn">GitHub</a></p>
+        </div>
+    </div>;
 
 export default Home;

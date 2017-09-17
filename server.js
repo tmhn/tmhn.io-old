@@ -5,18 +5,13 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const compression = require("compression");
 
-const velominatiRoutes = require("./browser/config/velominati-routes");
-
 const app = express();
-const host = process.env.HOST || "http://localhost:";
+const host = process.env.HOST || "http://localhost";
 const port = process.env.PORT || 8080;
 
 app.use(compression());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
-
-// Velominati Rules API
-app.use(velominatiRoutes);
 
 // Keep this route as the last one
 app.get("*", (req, res) => {
@@ -29,5 +24,5 @@ function renderMain(req, res) {
 
 app.get("/", renderMain);
 app.listen(port, () => {
-    console.log(`Listening at: ${host}${port}`); // eslint-disable-line no-console
+    console.log(`Listening at: ${host}:${port}`); // eslint-disable-line no-console
 });
