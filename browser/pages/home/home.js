@@ -8,11 +8,8 @@ const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         height: "100%",
-        padding: 0,
+        padding: 8,
         margin: 0
-    },
-    leftPanel: {
-        paddingRight: "35px"
     },
     rightPanel: {
         alignItems: "center",
@@ -39,13 +36,11 @@ const styles = StyleSheet.create({
 
 const Home = () =>
     <div className={css(styles.wrapper)}>
-        <div className={css(styles.leftPanel)}>
-            <img src="/images/tmwhn.jpg" />
-        </div>
         <div className={css(styles.rightPanel)}>
             <p className={css(styles.title)}>Tom Hanson</p>
             <p className={css(styles.subtitle)}>Software Engineer</p>
-            <p className={css(styles.intro)}>I work at SkyBet in Leeds</p>
+            <p className={css(styles.intro)}>Hi <span>👋</span> I'm Tom, I work at SkyBet in Leeds.</p>
+            <p className={css(styles.intro)}>I work daily with the following technologies:</p>
             <p className={css(styles.intro)}>
                 <ul>
                     <li>React</li>
@@ -54,7 +49,8 @@ const Home = () =>
                     <li>ES6</li>
                 </ul>
             </p>
-            <p className={css(styles.intro)}>Find me on <a href="https://twitter.com/iTomHanson">Twitter</a>, on <a href="https://www.strava.com/athletes/tomhanson">Strava</a> or <a href="https://github.com/tmhn">GitHub</a></p>
+            <p className={css(styles.intro)}>Find me on <a href="https://twitter.com/iTomHanson">Twitter</a>, <a href="https://medium.com/@itomhanson">Medium</a>, <a href="https://www.strava.com/athletes/tomhanson">Strava</a> or <a href="https://github.com/tmhn">GitHub</a></p>
+            <p className={css(styles.intro)}>If you'd like to get in touch, holla on Twitter, or email me: tom at tmhn dot io</p>
         </div>
     </div>;
 
